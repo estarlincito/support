@@ -20,7 +20,7 @@ function App() {
             <a><Link to="/service">Servicios</Link></a>
             <a><Link to="/contact">Contacto</Link></a>
           </nav>
-          <h1 class="intro"></h1>
+          <h1 class="intro" id='intro'></h1>
     <Switch>
       {/* 404 */}
       <Route path="/404">

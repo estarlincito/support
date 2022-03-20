@@ -2,16 +2,51 @@
     {
       "subtitle": "Diseño de páginas web",
       "text": "Construimos experiencias estratégicas y atractivas que refuerzan la credibilidad, comunican mensajes clave y convierten las perspectivas en ganancias.",
-      "imgcard": "/img/website___estarlincito.svg"
+      "imgcard": "/img/website__estarlincito.svg"
+    },
+    {
+      "subtitle": "Desbloqueo de Celulares",
+      "text": "Soporte: iPhone | Samsung | LG & más.",
+      "imgcard": "img/undraw_android_jr64__estarlincito.svg"
+    },
+    {
+      "subtitle": "Soporte técnico",
+      "text": "Estarlincito tiene todas sus necesidades tecnológicas cubiertas, 24/7, 365 días al año. Así que empieza a revisar las cosas de tu lista de tareas técnicas. Además Con el fin de minimizar el tiempo de espera cuando surge un problema, ofrecemos ASISTENCIA EN REMOTO.",
+      "imgcard": "img/bug_fixing__estarlincito.svg"
     },
     {
       "subtitle": "Celulares | Laptop | Tablet",
       "text": "Venta de Celulares, Tablet, Laptop, PC, Reloj, Bocinas y mucho más.",
-      "imgcard": "img/pc__phone__tablet___estarlincito.svg"
+      "imgcard": "img/pc__phone__tablet__estarlincito.svg"
     },
     {
-      "subtitle": "Soporte técnico",
-      "text": "Estarlincito tiene todas sus necesidades tecnológicas cubiertas, 24/7, 365 días al año. Así que empieza a revisar las cosas de tu lista de tareas técnicas.",
-      "imgcard": "img/bug_fixing__estarlincito.svg"
+      "subtitle": "¿Ovidaste tu Pin, patrón o contraseña?",
+      "text": "Soporte: Laptop | PC | Celulares & más.",
+      "imgcard": "img/undraw_secure_login_pdn4__estarlincito.svg"
+    },
+    {
+      "subtitle": "¿Activaste un paquete de datos móviles y no funciona el internet?",
+      "text": "Soporte: iPhone & Android..",
+      "imgcard": "img/undraw_mobile_browsers_re_kxol__estarlincito.svg"
+    },
+    {
+      "subtitle": "Instalacion y mantenimiento de Sistema Operativo",
+      "text": "Soporte: MacOS | Windows | Linux | iOS | Android & más.",
+      "imgcard": "img/undraw_firmware_re_fgdy__estarlincito.svg"
+    },
+    {
+      "subtitle": "Instalacion del Paquete de Oficina",
+      "text": "Los programas del paquete Oficina incluyen programas como Word, Excel, Power Point entre otros.",
+      "imgcard": "img/undraw_add_document_re_mbjx__estarlincito.svg"
+    },
+    {
+      "subtitle": "Protección Pro Wi-Fi",
+      "text": "¿Estás cansado de que te tomen el wifi prestado sin tu permiso?.",
+      "imgcard": "img/undraw_broadcast_jhwx__estarlincito.svg"
+    },
+    {
+      "subtitle": "Netflix",
+      "text": "Películas y series ilimitadas en tu teléfono, tablet, computadora y TV sin costo extra.",
+      "imgcard": "img/undraw_netflix_q-00-o__estarlincito.svg"
     }
   ]
