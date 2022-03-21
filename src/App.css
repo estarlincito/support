@@ -7,7 +7,7 @@
   width: 0px;
 }
 body{
-  background-color: white;
+  background-color: #f5f5f7;
 }
 a{
   text-decoration: none;
@@ -53,7 +53,8 @@ nav a:hover{
   text-align:center;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  background-color: #f5f5f7;
+  background-color: white;
+  box-shadow: 0 3px 13px 1px rgb(0 0 0 / 9%);
   margin: 20px;
   border-radius: 5px;
 }
