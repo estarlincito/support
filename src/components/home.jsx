@@ -11,7 +11,7 @@ for (let i = 0; i < 2; i++) {
 const home = () =>{
     return(
         <div>
-            <title>Inicio | Estarlincito</title>
+            <title>Estarlincito</title>
             {card(data[2].subtitle,data[2].text,data[2].imgcard)}
 
             <div className='card__article--2'>

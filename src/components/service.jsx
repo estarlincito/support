@@ -12,7 +12,7 @@ for (let i = 0; i < data.length; i++) {
 const service = () =>{
     return(
         <div>
-            <title>Servisios | Estarlincito</title>
+            <title>Servisios - Estarlincito</title>
             <div className='card__article--2'>
                 {cardJson}
             </div>

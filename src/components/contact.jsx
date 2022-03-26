@@ -3,7 +3,7 @@ import React from "react";
 const contact = () =>{
     return(
         <div className="container">
-            <title>Contacto | Estarlincito</title>
+            <title>Contacto - Estarlincito</title>
             <form 
                 className="form" action="https://formspree.io/f/mzbovyaw" method="POST"
             >

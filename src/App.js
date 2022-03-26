@@ -18,7 +18,7 @@ function App() {
           <nav>
             <a><Link to="/">Inicio</Link></a>
             <a><Link to="/service">Servicios</Link></a>
-            <a><Link to="/contact">Contacto</Link></a>
+            <a><Link to="/contact#intro">Contacto</Link></a>
           </nav>
           <h1 class="intro" id='intro'></h1>
     <Switch>

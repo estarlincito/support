@@ -1,3 +1,14 @@
+:root {
+  --blue: #06c;
+  --black: #000000;
+  --white: #ffffff;
+  --whiteCard: #f5f5f7;
+  --blackNav: #2c2c2c;
+  --whitekNav: #d9d9dd;
+  --forminputc: #bbb0bb;
+  
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -7,16 +18,14 @@
   width: 0px;
 }
 body{
-  background-color: #f5f5f7;
+  background-color: var(--white);
 }
 a{
   text-decoration: none;
-  color: #06c;
+  color: var(--blue);
   font-size: 16px;
 }
-/* img{
-  width: 100%;
-} */
+
 .container{
   min-height: 700px;
   margin: auto;
@@ -24,7 +33,7 @@ a{
 
 /* menu */
 nav{
-  background-color: rgb(56, 56, 56);
+  background-color: var(--blackNav);
   display: grid;
   grid-template-columns: auto auto auto;
   justify-content: center;
@@ -36,12 +45,12 @@ nav{
   width: 100%;
 }
 nav a{
-  color: #d9d9dd;
+  color: var(--whitekNav);
   padding: 10px;
   font-size: 16px;
 }
 nav a:hover{
-  color: white;
+  color: var(--white);
 }
 
 /* spaceHome */
@@ -50,43 +59,54 @@ nav a:hover{
 }
 /* card */
 .card__article{
+  background-color: var(--whiteCard);
   text-align:center;
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  background-color: white;
-  box-shadow: 0 3px 13px 1px rgb(0 0 0 / 9%);
+  grid-template-columns: auto;
   margin: 20px;
   border-radius: 5px;
 }
+
 .card__figure{
+  margin: auto;
+  box-shadow: 0 3px 13px 1px rgb(0 0 0 / 9%);
+  background-color: var(--white);
+  border-radius: 10px 10px 0px 0px;
   height: 400px;
+  width: 80%;
 }
 .card__img{
   width: 100%;
   height: 100%;
 }
 .card__figcaption{
+  display: grid;
   margin: auto;
-  height: 250px;
-  text-align: left;
-  padding: 30px;
+  height: 200px;
+  width: 40%;
 }
+
+.card__figcaption_text{
+  margin: auto;
+}
+
 .card__subtitle{
-  color: black;
+  color: var(--black);
   font-family: 'PT Sans Narrow';
   font-weight: bold;
   font-style: normal;
   font-size: 30px;
 }
+
 .card__text{
   font-family: 'Rubik';
   font-weight: 300;
   font-style: normal;
+  margin-top: 10px;
 }
 .card__Button{
   text-align: center;
   margin: auto;
-  margin-top: 40px;
   max-width: 100px;
   padding:20px;
   border-radius: 5px;
@@ -94,17 +114,20 @@ nav a:hover{
 .card__article--2{
   display: grid;
   grid-template-columns: auto auto;
-  /* padding: 50px; */
 }
 .card__article--2 article{
   display: grid;
   grid-template-columns: auto;
 }
 
+.card__article--2 .card__figcaption{
+  width: 80%;
+}
+
 /* pieDePagina */
 footer{
-  background-color: rgb(56, 56, 56);
-  color: white;
+  background-color: var(--blackNav);
+  color: var(--whitekNav);
   display: grid;
   grid-template-columns: auto;
   margin: auto;
@@ -113,7 +136,7 @@ footer{
 }
 footer a{
   font-size: 16px;
-  color: white;
+  color: var(--white);
 }
 
 /* icoin */
@@ -121,15 +144,15 @@ footer a{
   margin: 5px;
 }
 .bi-box-arrow-up-right{
-  color: #06c;
+  color: var(--blue);
 }
 .bi-envelope-fill{
-  color: white;
+  color: var(--white);
   font-size: 30px;
 }
 
 .bi-twitter{
-  color: white;
+  color: var(--white);
   font-size: 30px;
 }
 
@@ -160,7 +183,7 @@ footer a{
   padding: .8em 1em;
   outline: none;
   border: none;
-  border: 1px solid #bbb0bb;
+  border: 1px solid var(--forminputc);
   border-radius: 0.2em;
 }
 .form__input--message{
@@ -170,8 +193,8 @@ footer a{
 }
 .form__cta{
   font-size: 1rem;
-  background-color: #06c;
-  color: #fff;
+  background-color: var(--blue);
+  color: var(--white);
   border: none;
   font-weight: 500;
   padding: .7em 0;
@@ -203,6 +226,11 @@ footer a{
 
 @media screen and (max-width: 600px) {
   .card__figure{
-    height: 200px;
+    height: 250px;
   }
+
+  .card__figcaption{
+    width: 80%;
+  }
+  
 }
