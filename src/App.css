@@ -60,6 +60,7 @@ nav a:hover{
 /* card */
 .card__article{
   background-color: var(--whiteCard);
+  box-shadow: 0 3px 13px 1px rgba(0, 0, 0, 0.452);
   text-align:center;
   display: grid;
   grid-template-columns: auto;
@@ -69,7 +70,6 @@ nav a:hover{
 
 .card__figure{
   margin: auto;
-  box-shadow: 0 3px 13px 1px rgb(0 0 0 / 9%);
   background-color: var(--white);
   border-radius: 10px 10px 0px 0px;
   height: 400px;
