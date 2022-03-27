@@ -1,23 +1,22 @@
 import React from "react";
 import data from '../data.json'
-import card from "./card";
+import Card from "./Card";
 
 const cardJson = [];
 for (let i = 0; i < data.length; i++) {
-    const element = card(data[i].subtitle,data[i].text,data[i].imgcard);
+    const element = Card(data[i].subtitle,data[i].text,data[i].imgcard);
     cardJson.push(element) 
 }
 
-
-const service = () =>{
+const Service = () =>{
     return(
         <div>
             <title>Servisios - Estarlincito</title>
-            <div className='card__article--2'>
+            <div className='card__container card__container--2'>
                 {cardJson}
             </div>
         </div>
     )
 }
 
-export default service;
+export default Service;

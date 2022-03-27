@@ -1,24 +1,27 @@
 import React from "react";
 import data from '../data.json'
-import card from "./card";
+import Card from "./Card";
 
 const cardJson = [];
 for (let i = 0; i < 2; i++) {
-    const element = card(data[i].subtitle,data[i].text,data[i].imgcard);
+    const element = Card(data[i].subtitle,data[i].text,data[i].imgcard);
     cardJson.push(element) 
 }
 
-const home = () =>{
+const Home = () =>{
     return(
         <div>
             <title>Estarlincito</title>
-            {card(data[2].subtitle,data[2].text,data[2].imgcard)}
+            <div className="card__container">
+                {Card(data[2].subtitle,data[2].text,data[2].imgcard)}
+            </div>
+            
 
-            <div className='card__article--2'>
+            <div className='card__container card__container--2'>
                 {cardJson}
             </div>
         </div>
     )
 }
 
-export default home;
+export default Home;

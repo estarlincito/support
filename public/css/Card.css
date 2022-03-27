@@ -1,0 +1,69 @@
+.card__container{
+    display: grid;
+    grid-template-columns: auto;
+}
+
+/* card__container--2 */
+.card__container--2{
+    grid-template-columns: auto auto;
+}
+
+.card__article{
+    background-color: var(--whiteCard);
+    box-shadow: 0 3px 13px 1px rgba(0, 0, 0, 0.199);
+    text-align:center;
+    margin: 20px;
+    border-radius: 5px;
+}
+  
+.card__figure{
+    margin: auto;
+    background-color: var(--white);
+    border-radius: 5px 5px 0px 0px;
+    height: 400px;
+    width: 80%;
+}
+.card__img{
+    width: 100%;
+    height: 100%;
+}
+.card__figcaption{
+    display: grid;
+    margin: auto;
+    height: 200px;
+    width: 40%;
+}
+
+.card__figcaption_text{
+    margin: auto;
+}
+
+.card__subtitle{
+    color: var(--black);
+    font-family: 'PT Sans Narrow';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 30px;
+}
+
+.card__text{
+    font-family: 'Rubik';
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.card__Button{
+    text-align: center;
+    margin: auto;
+    max-width: 100px;
+    padding:20px;
+    border-radius: 5px;
+}
+
+
+.bi-box-arrow-up-right{
+    margin: 5px;
+    color: var(--blue);
+}
