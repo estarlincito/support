@@ -1,0 +1,25 @@
+@media screen and (max-width: 992px) {
+    .card__container{
+        grid-template-columns: auto;
+    }
+  
+    .card__subtitle{
+      font-size: 20px;
+    }
+  
+    .form{
+      max-width: 300px;
+      font-size: 20px;
+    }
+}
+  
+@media screen and (max-width: 600px) {
+    .card__figure{
+      height: 250px;
+    }
+  
+    .card__figcaption{
+      width: 80%;
+    }
+    
+}
