@@ -8,6 +8,10 @@
     grid-template-columns: auto auto;
 }
 
+.card__container--2 .card__figcaption{
+    width: 80%;
+}
+
 .card__article{
     background-color: var(--whiteCard);
     box-shadow: 0 3px 13px 1px rgba(0, 0, 0, 0.199);
@@ -50,7 +54,7 @@
     font-family: 'Rubik';
     font-weight: 300;
     font-style: normal;
-    font-size: 16px;
+    font-size: 20px;
     margin-top: 10px;
 }
 

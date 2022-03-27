@@ -1,9 +1,6 @@
 footer{
     background-color: var(--blackNav);
     color: var(--whitekNav);
-    /* display: grid; */
-    /* grid-template-columns: auto; */
-    /* margin: auto; */
     padding: 20px;
     text-align: center;
 }
