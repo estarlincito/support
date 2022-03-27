@@ -45,7 +45,7 @@ function App() {
 
       <footer>
           <div class="contact" id="contact">
-            <a href="mailto:support@estarlincito.tech"><i class="bi bi-envelope-fill"></i></a>
+            {/* <a href="mailto:support@estarlincito.tech"><i class="bi bi-envelope-fill"></i></a> */}
             <a href="https://twitter.com/estarlincito" target="bank"><i class="bi bi-twitter"></i></a>
           </div>
           <div>
