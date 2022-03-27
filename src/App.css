@@ -71,7 +71,6 @@ nav a:hover{
 .card__figure{
   margin: auto;
   background-color: var(--white);
-  box-shadow: 0 3px 13px 1px rgba(0, 0, 0, 0);
   border-radius: 10px 10px 0px 0px;
   height: 400px;
   width: 80%;
