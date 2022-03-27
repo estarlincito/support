@@ -4,7 +4,11 @@
     }
   
     .card__subtitle{
-      font-size: 20px;
+      font-size: 25px;
+    }
+
+    .card__text{
+      font-size: 16px;
     }
   
     .form{
