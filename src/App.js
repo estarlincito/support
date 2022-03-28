@@ -20,8 +20,6 @@ function App() {
      <ScrollToTop />
      <Menu />
     <div className='container'>
-       <h1 class="intro" id="intro"></h1>
-       
        <Switch>
         <Route path="/contact" exact component={Contact}/>
         <Route path="/service" exact component={Service}/>

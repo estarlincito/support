@@ -14,7 +14,7 @@ const Card = (subtitle, text, img) => {
                 </div>
               </div>
             </figcaption>
-
+            
             <figure className="card__figure">
               <Link to="/contact"><img className="card__img" src={img}/></Link>
             </figure>
