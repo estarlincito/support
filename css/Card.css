@@ -13,6 +13,7 @@
 }
 
 .card__article{
+    display: grid;
     background-color: var(--whiteCard);
     text-align:center;
     margin: 20px;
@@ -68,5 +69,13 @@
 
 .bi-box-arrow-up-right{
     margin: 5px;
+    color: var(--blue);
+}
+
+.bi-share{
+    cursor: pointer;
+    font-size: 20px;
+    text-align: right;
+    margin: 20px;
     color: var(--blue);
 }
