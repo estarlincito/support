@@ -9,6 +9,7 @@ import {
 import ScrollToTop from './components/ScrollToTop';
 import Menu from './components/Menu';
 import Footer from "./components/Footer";
+import Share from "./components/Share";
 import Home from './components/Home';
 import Service from './components/Service';
 import Contact from './components/Contact';
@@ -19,6 +20,7 @@ function App() {
    <Router>
      <ScrollToTop />
      <Menu />
+     <Share />
     <div className='container'>
        <Switch>
         <Route path="/contact" exact component={Contact}/>

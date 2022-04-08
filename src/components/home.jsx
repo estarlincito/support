@@ -1,24 +1,39 @@
-import React from "react";
+import React, { Fragment } from "react";
 import data from '../data.json'
 import Card from "./Card";
 
-const cardJson = [];
-for (let i = 0; i < 2; i++) {
-    const element = Card(data[i].subtitle,data[i].text,data[i].imgcard);
-    cardJson.push(element) 
-}
-
 const Home = () =>{
+
+    const items = [];
+    for (let i = 0; i < data.length; i++) {
+        items.push(
+
+            <Card
+                subtitle = {data[i].subtitle}
+                descripction = {data[i].descripction}
+                img = {data[i].imgcard}
+            />
+        );
+    }
+
     return(
         <div>
             <title>Estarlincito</title>
             <div className="card__container">
-                {Card(data[2].subtitle,data[2].text,data[2].imgcard)}
+                <Card 
+                    subtitle = {data[2].subtitle}
+                    descripction = {data[2].descripction}
+                    img = {data[2].imgcard}
+                    />
             </div>
             
 
             <div className='card__container card__container--2'>
-                {cardJson}
+
+                {items.map((items,index)=>{
+                    return <Fragment key={index}>{items}</Fragment>
+                })}
+
             </div>
         </div>
     )

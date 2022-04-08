@@ -7,9 +7,9 @@ const Menu = () =>{
     return(
         
         <nav>
-            <a><Link to="/">Inicio</Link></a>
-            <a><Link to="/service">Servicios</Link></a>
-            <a><Link to="/contact">Contacto</Link></a>
+            <Link to="/">Inicio</Link>
+            <Link to="/service">Servicios</Link>
+            <Link to="/contact">Contacto</Link>
         </nav>
 
     )
