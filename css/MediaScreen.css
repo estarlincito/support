@@ -15,6 +15,10 @@
       max-width: 300px;
       font-size: 20px;
     }
+
+    .form__label{
+      font-size: 15px;
+  }
 }
   
 @media screen and (max-width: 600px) {
