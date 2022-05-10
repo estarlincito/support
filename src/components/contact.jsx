@@ -10,11 +10,20 @@ const Contact = () =>{
 
                 <div className="form__container">
                     <h2 className="form__title">Contáctame</h2>
-                    <input type="text" className="form__input" placeholder="Nombre:" name="name"/>
-                    <input type="text" className="form__input" placeholder="Email:" name="email"/>
-                    <input type="number" className="form__input" placeholder="Número Telefónico:" name="phoneNumber"/>
-                    <input type="text" className="form__input" placeholder="Asunto:" name="requestSubject"/>
-                    <textarea className="form__input form__input--message" placeholder="Mensaje:" name="message"></textarea>
+                    <label className="form__label">Nombre:</label>
+                    <input type="text" className="form__input" name="name"/>
+
+                    <label className="form__label">Email:</label>
+                    <input type="text" className="form__input" name="email"/>
+
+                    <label className="form__label">Número Telefónico:</label>
+                    <input type="number" className="form__input" name="phoneNumber"/>
+
+                    <label className="form__label">Asunto:</label>
+                    <input type="text" className="form__input" name="requestSubject"/>
+
+                    <label className="form__label">Mensaje:</label>
+                    <textarea className="form__input form__input--message" name="message"></textarea>
                     <input type="submit" value="Enviar" className="form__cta"/>
                 </div>
             </form>

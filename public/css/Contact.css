@@ -10,7 +10,7 @@
 .form__container{
     width: 100%;
     display: grid;
-    gap: 1em;
+    /* gap: 1em; */
     grid-auto-columns: 100%;
 }
 
@@ -29,6 +29,12 @@
     border: none;
     border: 1px solid var(--forminputc);
     border-radius: 0.2em;
+}
+
+.form__label{
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .form__input--message{
