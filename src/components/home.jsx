@@ -5,7 +5,7 @@ import Card from "./Card";
 const Home = () =>{
 
     const items = [];
-    for (let i = 6; i < data.length; i++) {
+    for (let i = 8; i < data.length; i++) {
         items.push(
 
             <Card

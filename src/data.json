@@ -1,6 +1,6 @@
 [
     {
-      "subtitle": "Diseño de páginas web",
+      "subtitle": "Diseño de Páginas web",
       "descripction": "!Convierte tus perspectivas en ganancias¡",
       "imgcard": "/img/website__estarlincito.svg"
     },
@@ -10,7 +10,7 @@
       "imgcard": "/img/undraw_android_jr64__estarlincito.svg"
     },
     {
-      "subtitle": "Soporte técnico",
+      "subtitle": "Soporte Técnico",
       "descripction": "Estarlincito tiene todas tus necesidades tecnológicas cubiertas.",
       "imgcard": "/img/bug_fixing__estarlincito.svg"
     },
@@ -48,5 +48,15 @@
       "subtitle": "Netflix",
       "descripction": "Películas y series ilimitadas en tu teléfono, tablet, computadora y TV sin costo extra.",
       "imgcard": "/img/undraw_netflix_q-00-o__estarlincito.svg"
+    },
+    {
+      "subtitle": "Pagos de Servicios",
+      "descripction": "En Estarlincito lo hacemos por ti. Podemos pagar tus servicios de Internet, Teléfono, Telecable y más.",
+      "imgcard": "/img/undraw_digital_nomad_re_w8uy__estarlincito.svg"
+    },
+    {
+      "subtitle": "privacidad Digital",
+      "descripction": "La privacidad digital es importante porque ayuda a proteger la información más privada sobre una persona.",
+      "imgcard": "/img/undraw_safe_re_kiil__estarlincito.svg"
     }
   ]
