@@ -7,7 +7,7 @@ import Card from "./Card";
 const Service = () =>{
 
     const items = [];
-    for (let i = 0; i < data.length; i++) {
+    for (let i = 1; i < data.length; i++) {
         items.push(
 
             <Card
