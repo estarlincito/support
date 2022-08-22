@@ -5,7 +5,7 @@ import Card from "./Card";
 const Home = () =>{
 
     const items = [];
-    for (let i = 9; i < data.length; i++) {
+    for (let i = 10; i < data.length; i++) {
         items.push(
 
             <Card
@@ -21,9 +21,9 @@ const Home = () =>{
             <title>Estarlincito</title>
             <div className="card__container">
                 <Card 
-                    subtitle = {data[2].subtitle}
-                    descripction = {data[2].descripction}
-                    img = {data[2].imgcard}
+                    subtitle = {data[1].subtitle}
+                    descripction = {data[1].descripction}
+                    img = {data[1].imgcard}
                     />
             </div>
             

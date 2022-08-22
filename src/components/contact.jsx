@@ -9,7 +9,7 @@ const Contact = () =>{
             >
 
                 <div className="form__container">
-                    <h2 className="form__title">Contáctame</h2>
+                    <h2 className="form__title">Contáctanos</h2>
                     <label className="form__label">Nombre</label>
                     <input type="text" className="form__input" name="name" title="Por favor escriba su nombre" required/>
 
