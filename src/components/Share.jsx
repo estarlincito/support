@@ -1,3 +1,4 @@
+//este es el apartado de compartir, devo de terminarlo
 import React, { useReducer } from 'react'
 import Use_Reducer from './Use_Reducer';
 import {

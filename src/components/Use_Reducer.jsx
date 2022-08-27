@@ -1,5 +1,5 @@
 
-
+//Este codigo es para hacer el apartado de compartir
 const Use_Reducer = (state, action) => {
     switch(action.type) {
         case "hide":
