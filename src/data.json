@@ -1,73 +1,72 @@
 [
-
-    {
-      "subtitle": "Netflix",
-      "descripction": "Películas y series ilimitadas en tu teléfono, tablet, computadora y TV sin costo extra.",
-      "imgcard": "/img/undraw_netflix_q-00-o__estarlincito.svg"
-    },
-    {
-      "subtitle": "Auditoría informática",
-      "descripction": "Identificamos las vulnerabilidades que tiene la empresa, con el objetivo de corregir e incrementar el nivel de protección y seguridad de toda la organización.",
-      "imgcard": "/img/undraw_people_re_8spw__estarlincito.svg"
-    },
-    {
-      "subtitle": "Diseño de Páginas Web",
-      "descripction": "!Convierte tus perspectivas en ganancias¡",
-      "imgcard": "/img/website__estarlincito.svg"
-    },
-    {
-      "subtitle": "Desbloqueo de Celulares",
-      "descripction": "Soporte: iPhone | Samsung | LG & más.",
-      "imgcard": "/img/undraw_android_jr64__estarlincito.svg"
-    },
-    {
-      "subtitle": "Soporte Técnico",
-      "descripction": "Estarlincito tiene todas tus necesidades tecnológicas cubiertas.",
-      "imgcard": "/img/bug_fixing__estarlincito.svg"
-    },
-    {
-      "subtitle": "Celulares | Laptop | Tablet",
-      "descripction": "Venta de Celulares, Tablet, Laptop, PC, Reloj, Bocinas y mucho más.",
-      "imgcard": "/img/pc__phone__tablet__estarlincito.svg"
-    },
-    {
-      "subtitle": "¿Ovidaste tu contraseña?",
-      "descripction": "Soporte: Laptop | PC | Celulares & más.",
-      "imgcard": "/img/undraw_secure_login_pdn4__estarlincito.svg"
-    },
-    {
-      "subtitle": "Configuración APN",
-      "descripction": "¿Activaste un paquete de datos móviles y no funciona el internet?",
-      "imgcard": "/img/undraw_mobile_browsers_re_kxol__estarlincito.svg"
-    },
-    {
-      "subtitle": "Instalación de Windows",
-      "descripction": "¿Deseas actualizar tu Windows?",
-      "imgcard": "/img/undraw_firmware_re_fgdy__estarlincito.svg"
-    },
-    {
-      "subtitle": "Office",
-      "descripction": "Los programas del paquete Oficina incluyen programas como Word, Excel, Power Point entre otros.",
-      "imgcard": "/img/undraw_add_document_re_mbjx__estarlincito.svg"
-    },
-    {
-      "subtitle": "Protección Pro Wi-Fi",
-      "descripction": "¿Estás cansado de que te tomen el wifi prestado sin tu permiso?.",
-      "imgcard": "/img/undraw_broadcast_jhwx__estarlincito.svg"
-    },
-    {
-      "subtitle": "Pagos de Servicios",
-      "descripction": "En Estarlincito lo hacemos por ti. Podemos pagar tus servicios de Internet, Teléfono, Telecable y más.",
-      "imgcard": "/img/undraw_digital_nomad_re_w8uy__estarlincito.svg"
-    },
-    {
-      "subtitle": "Privacidad Digital",
-      "descripction": "La privacidad digital es importante porque ayuda a proteger la información más privada sobre una persona.",
-      "imgcard": "/img/undraw_safe_re_kiil__estarlincito.svg"
-    },
-    {
-      "subtitle": "Personalizar el PC",
-      "descripction": "Son muchos los usuarios a los que les gusta personalizar sus escritorios o apariencia del sistema.",
-      "imgcard": "/img/undraw_personal_settings_re_i6w4__estarlincito.svg"
-    }
-  ]
+  {
+    "subtitle": "Netflix",
+    "descripction": "Películas y series ilimitadas en tu teléfono, tablet, computadora y TV sin costo extra.",
+    "imgcard": "/img/undraw_netflix_q-00-o__estarlincito.svg"
+  },
+  {
+    "subtitle": "Auditoría informática",
+    "descripction": "Identificamos las vulnerabilidades que tiene la empresa, con el objetivo de corregir e incrementar el nivel de protección y seguridad de toda la organización.",
+    "imgcard": "/img/undraw_people_re_8spw__estarlincito.svg"
+  },
+  {
+    "subtitle": "Diseño de Páginas Web",
+    "descripction": "!Convierte tus perspectivas en ganancias¡",
+    "imgcard": "/img/website__estarlincito.svg"
+  },
+  {
+    "subtitle": "Desbloqueo de Celulares",
+    "descripction": "Soporte: iPhone | Samsung | LG & más.",
+    "imgcard": "/img/undraw_android_jr64__estarlincito.svg"
+  },
+  {
+    "subtitle": "Soporte Técnico",
+    "descripction": "Estarlincito tiene todas tus necesidades tecnológicas cubiertas.",
+    "imgcard": "/img/bug_fixing__estarlincito.svg"
+  },
+  {
+    "subtitle": "Celulares | Laptop | Tablet",
+    "descripction": "Venta de Celulares, Tablet, Laptop, PC, Reloj, Bocinas y mucho más.",
+    "imgcard": "/img/pc__phone__tablet__estarlincito.svg"
+  },
+  {
+    "subtitle": "¿Ovidaste tu contraseña?",
+    "descripction": "Soporte: Laptop | PC | Celulares & más.",
+    "imgcard": "/img/undraw_secure_login_pdn4__estarlincito.svg"
+  },
+  {
+    "subtitle": "Configuración APN",
+    "descripction": "¿Activaste un paquete de datos móviles y no funciona el internet?",
+    "imgcard": "/img/undraw_mobile_browsers_re_kxol__estarlincito.svg"
+  },
+  {
+    "subtitle": "Instalación de Windows",
+    "descripction": "¿Deseas actualizar tu Windows?",
+    "imgcard": "/img/undraw_firmware_re_fgdy__estarlincito.svg"
+  },
+  {
+    "subtitle": "Office",
+    "descripction": "Los programas del paquete Oficina incluyen programas como Word, Excel, Power Point entre otros.",
+    "imgcard": "/img/undraw_add_document_re_mbjx__estarlincito.svg"
+  },
+  {
+    "subtitle": "Protección Pro Wi-Fi",
+    "descripction": "¿Estás cansado de que te tomen el wifi prestado sin tu permiso?.",
+    "imgcard": "/img/undraw_broadcast_jhwx__estarlincito.svg"
+  },
+  {
+    "subtitle": "Pagos de Servicios",
+    "descripction": "En Estarlincito lo hacemos por ti. Podemos pagar tus servicios de Internet, Teléfono, Telecable y más.",
+    "imgcard": "/img/undraw_digital_nomad_re_w8uy__estarlincito.svg"
+  },
+  {
+    "subtitle": "Privacidad Digital",
+    "descripction": "La privacidad digital es importante porque ayuda a proteger la información más privada sobre una persona.",
+    "imgcard": "/img/undraw_safe_re_kiil__estarlincito.svg"
+  },
+  {
+    "subtitle": "Personalizar el PC",
+    "descripction": "Son muchos los usuarios a los que les gusta personalizar sus escritorios o apariencia del sistema.",
+    "imgcard": "/img/undraw_personal_settings_re_i6w4__estarlincito.svg"
+  }
+]

@@ -1,18 +1,17 @@
-
 //Este codigo es para hacer el apartado de compartir
 const Use_Reducer = (state, action) => {
-    switch(action.type) {
-        case "hide":
-            // state = "Share__container";
-            return state+1
+  switch (action.type) {
+    case "hide":
+      // state = "Share__container";
+      return state + 1;
 
-            case "Share__container":
-                state = "hide";
-                return alert(state)
+    case "Share__container":
+      state = "hide";
+      return alert(state);
 
-        default:
-            return state;
-    }
-}
+    default:
+      return state;
+  }
+};
 
 export default Use_Reducer;
