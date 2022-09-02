@@ -1,5 +1,4 @@
 .error{
-    background-color: red;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 20px  auto 80px;
