@@ -9,7 +9,7 @@ import Share from "./components/Share";
 import Home from "./components/Home";
 import Service from "./components/Service";
 import Contact from "./components/Contact";
-import Error404 from "./components/Error404";
+import NotFound from "./components/NotFound";
 
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
           <Route path="/contact" exact component={Contact} />
           <Route path="/service" exact component={Service} />
           <Route path="/" exact component={Home} />
-          <Route component={Error404} />
+          <Route component={NotFound} />
         </Switch>
       </div>
       <Footer />
