@@ -1,7 +1,7 @@
 //este es el apartado de compartir, devo de terminarlo
 import React, { useReducer } from "react";
-import Use_Reducer from "./Use_Reducer";
 import { Link } from "react-router-dom";
+import Use_Reducer from "./Use_Reducer";
 
 const Share = () => {
   const [useState, dispatch] = useReducer(Use_Reducer, "hide");

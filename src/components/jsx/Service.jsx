@@ -15,14 +15,14 @@ const Service = () => {
   }
 
   return (
-    <div>
+    <>
       <title>Servicios - Estarlincito</title>
       <div className="card__container card__container--2">
         {items.map((items, index) => {
           return <Fragment key={index}>{items}</Fragment>;
         })}
       </div>
-    </div>
+    </>
   );
 };
 

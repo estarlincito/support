@@ -4,6 +4,7 @@ import Card from "./Card";
 
 const Home = () => {
   const items = [];
+
   for (let i = 10; i < data.length; i++) {
     items.push(
       <Card
@@ -15,7 +16,7 @@ const Home = () => {
   }
 
   return (
-    <div>
+    <>
       <title>Estarlincito</title>
       <div className="card__container">
         <Card
@@ -30,7 +31,7 @@ const Home = () => {
           return <Fragment key={index}>{items}</Fragment>;
         })}
       </div>
-    </div>
+    </>
   );
 };
 

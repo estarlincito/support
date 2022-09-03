@@ -1,6 +1,7 @@
 import React, { useReducer } from "react";
-import Use_Reducer from "./Use_Reducer";
 import { Link } from "react-router-dom";
+import Use_Reducer from "./Use_Reducer";
+const card_img = require.context("../img", true)
 
 const Card = (props) => {
   const [useState, dispatch] = useReducer(Use_Reducer, "hide");
@@ -23,7 +24,7 @@ const Card = (props) => {
 
       <figure className="card__figure">
         <Link to="/contact">
-          <img className="card__img" src={props.img} />
+          <img className="card__img" src={card_img(`./${props.img}.svg`)} alt="" />
         </Link>
       </figure>
     </article>
