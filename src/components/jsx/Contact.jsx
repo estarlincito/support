@@ -22,7 +22,7 @@ const Contact = () => {
 
           <label className="form__label">Correo electrónico</label>
           <input
-            type="text"
+            type="email"
             className="form__input"
             name="email"
             title="Por favor escriba su correo electrónico"

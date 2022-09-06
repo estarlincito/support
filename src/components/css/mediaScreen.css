@@ -1,45 +1,45 @@
 @media screen and (max-width: 992px) {
-    .card__container{
-        grid-template-columns: auto;
-    }
-  
-    .card__subtitle{
-      font-size: 25px;
-    }
+  .card__container {
+    grid-template-columns: auto;
+  }
 
-    .card__text{
-      font-size: 16px;
-    }
-  
-    .form{
-      max-width: 300px;
-      font-size: 20px;
-    }
+  .card__subtitle {
+    font-size: 25px;
+  }
 
-    .form__label{
-      font-size: 15px;
+  .card__text {
+    font-size: 16px;
+  }
+
+  .form {
+    max-width: 300px;
+    font-size: 20px;
+  }
+
+  .form__label {
+    font-size: 15px;
   }
 }
-  
-@media screen and (max-width: 600px) {
-    .card__figure{
-      height: 250px;
-    }
-  
-    .card__figcaption{
-      width: 80%;
-    }
-    .error{
-      grid-template-rows: 80px  auto 100px;
-    }
-    
-    .error__title{
-        font-size: 30px;
-    }
 
-    .error__text{
-      font-size: 15px;
-      width: 80%;
-      margin: auto;
+@media screen and (max-width: 600px) {
+  .card__figure {
+    height: 250px;
+  }
+
+  .card__figcaption {
+    width: 80%;
+  }
+  .error {
+    grid-template-rows: 80px auto 100px;
+  }
+
+  .error__title {
+    font-size: 30px;
+  }
+
+  .error__text {
+    font-size: 15px;
+    width: 80%;
+    margin: auto;
   }
 }

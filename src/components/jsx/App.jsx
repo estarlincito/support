@@ -10,7 +10,6 @@ import "..//css/share.css"
 import "..//css/card.css"
 import "..//css/contact.css"
 import "..//css/mediaScreen.css"
-import "..//css/bootstrap-icons-1.8.1/bootstrap-icons.css"
 import "..//font/stylesheet.css"
 // -------------CSS----------------END
 
