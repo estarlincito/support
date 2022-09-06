@@ -1,6 +1,7 @@
 import React, { useReducer } from "react";
 import { Link } from "react-router-dom";
 import Use_Reducer from "./Use_Reducer";
+import { FiExternalLink } from "react-icons/fi";
 const card_img = require.context("../img", true)
 
 const Card = (props) => {
@@ -16,7 +17,7 @@ const Card = (props) => {
           <p className="card__text">{props.descripction}</p>
           <div className="card__Button">
             <Link to="/contact">
-              Solicitar<i className="bi bi-box-arrow-up-right"></i>
+              Solicitar<i className="FiExternalLink"><FiExternalLink/></i>
             </Link>
           </div>
         </div>
