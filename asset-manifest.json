@@ -1,13 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.ecd20016.css",
-    "main.js": "/static/js/main.2904a88f.js",
+    "main.css": "/static/css/main.bc311b5c.css",
+    "main.js": "/static/js/main.287828a6.js",
     "static/media/Rubik-Light.ttf": "/static/media/Rubik-Light.6dfd88fb878d43a4bbf1.ttf",
     "static/media/PTSans-NarrowBold.ttf": "/static/media/PTSans-NarrowBold.25266d9b8c6362bee05b.ttf",
     "static/media/PTSans-Narrow.ttf": "/static/media/PTSans-Narrow.020d261dfa00fe3148fb.ttf",
     "static/media/favicon-96x96.ico": "/static/media/favicon-96x96.2c60b5c1b9aab9f1400b.ico",
-    "static/media/bootstrap-icons.woff?": "/static/media/bootstrap-icons.c1d7432ee75fa194e499.woff",
-    "static/media/bootstrap-icons.woff2?": "/static/media/bootstrap-icons.a13b815539b49de48d23.woff2",
     "static/media/bug_fixing__estarlincito.svg": "/static/media/bug_fixing__estarlincito.8fbc69cc1e60c75dd302.svg",
     "static/media/undraw_firmware_re_fgdy__estarlincito.svg": "/static/media/undraw_firmware_re_fgdy__estarlincito.86015dccd6dcff48dab7.svg",
     "static/media/undraw_page_not_found_re_e9o6__estarlincito.svg": "/static/media/undraw_page_not_found_re_e9o6__estarlincito.bdf1c60c297dc6528f56.svg",
@@ -26,11 +24,11 @@
     "static/media/undraw_secure_login_pdn4__estarlincito.svg": "/static/media/undraw_secure_login_pdn4__estarlincito.108c59fad44b6507d58b.svg",
     "static/media/undraw_broadcast_jhwx__estarlincito.svg": "/static/media/undraw_broadcast_jhwx__estarlincito.87a9a689a88abba49132.svg",
     "index.html": "/index.html",
-    "main.ecd20016.css.map": "/static/css/main.ecd20016.css.map",
-    "main.2904a88f.js.map": "/static/js/main.2904a88f.js.map"
+    "main.bc311b5c.css.map": "/static/css/main.bc311b5c.css.map",
+    "main.287828a6.js.map": "/static/js/main.287828a6.js.map"
   },
   "entrypoints": [
-    "static/css/main.ecd20016.css",
-    "static/js/main.2904a88f.js"
+    "static/css/main.bc311b5c.css",
+    "static/js/main.287828a6.js"
   ]
 }
