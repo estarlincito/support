@@ -1,21 +1,37 @@
-footer{
-    background-color: var(--blackNav);
-    color: var(--whitekNav);
-    padding: 20px;
-    text-align: center;
+footer {
+  background-color: var(--blackNav);
+  color: var(--whitekNav);
+  padding: 20px;
+  text-align: center;
 }
 
-footer a{
-    font-size: 16px;
-    color: var(--white);
+.footer_share {
+  display: grid;
+  margin: auto;
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  height: 40px;
 }
 
-.bi-envelope-fill{
-    color: var(--white);
-    font-size: 30px;
+footer a {
+  font-weight: bold;
+  font-size: 16px;
+  color: var(--whitekNav);
 }
-  
-.bi-twitter{
-    color: var(--white);
-    font-size: 30px;
+
+footer a:active {
+  font-size: 18px;
+  color: var(--white);
+}
+
+.bi-envelope-fill {
+  color: var(--white);
+  font-size: 30px;
+}
+
+.bi-twitter {
+  color: var(--white);
+  font-size: 30px;
 }

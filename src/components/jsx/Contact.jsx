@@ -1,7 +1,5 @@
 import React from "react";
-
 import { useState } from "react";
-
 //Get UserContext
 import { useContext } from "react";
 import UserContext from "../../context/UserContext";

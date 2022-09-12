@@ -26,23 +26,22 @@ import NotFound from "./NotFound";
 // -------------JSX----------------END
 
 function App() {
-  
   return (
     <Router>
-      <ScrollToTop />
-      <Menu />
       <UserState>
+        <ScrollToTop />
+        <Menu />
         <div className="container">
           <Share />
           <Switch>
-            <Route path="/contact" exact component={Contact}/>
+            <Route path="/contact" exact component={Contact} />
             <Route path="/service" exact component={Service} />
             <Route path="/" exact component={Home} />
             <Route component={NotFound} />
           </Switch>
         </div>
+        <Footer />
       </UserState>
-      <Footer />
     </Router>
   );
 }

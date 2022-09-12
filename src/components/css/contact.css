@@ -56,6 +56,6 @@
     cursor: pointer;
 }
 
-.form__cta:hover{
+.form__cta:active{
     background-color: var(--black);
 }

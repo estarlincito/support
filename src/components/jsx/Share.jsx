@@ -24,6 +24,7 @@ const Share = () => {
                 close_share();
               }}><FiX/></i>
             </div>
+            <div className="Share__line"></div>
             <div className="Share__contents">
               <img
                 src={card_img(`./${selected_card.imgcard}.svg`)}
