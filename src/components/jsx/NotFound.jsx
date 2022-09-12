@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+//img
+const card_img = require.context("../img", true);
 
 const NotFound = () => {
   return (
@@ -15,7 +17,7 @@ const NotFound = () => {
         </p>
         <img
           className="error__img"
-          src="/img/undraw_page_not_found_re_e9o6__estarlincito.svg"
+          src={card_img(`./undraw_page_not_found_re_e9o6__estarlincito.svg`)}
           alt=""
         />
       </div>

@@ -1,26 +1,35 @@
-import React, { Fragment } from "react";
-import data from "../data.json";
 import Card from "./Card";
 
+//Get UserContext
+import { useEffect } from "react";
+import { useContext } from "react";
+import UserContext from "../../context/UserContext";
+
 const Service = () => {
-  const items = [];
-  for (let i = 1; i < data.length; i++) {
-    items.push(
-      <Card
-        subtitle={data[i].subtitle}
-        descripction={data[i].descripction}
-        img={data[i].imgcard}
-      />
-    );
-  }
+  //Get UserContext
+  const userContext = useContext(UserContext);
+  const { data_card, getDataJson } = userContext;
+
+  useEffect(() => {
+    getDataJson();
+  }, []);
 
   return (
     <>
       <title>Servicios - Estarlincito</title>
+
       <div className="card__container card__container--2">
-        {items.map((items, index) => {
-          return <Fragment key={index}>{items}</Fragment>;
-        })}
+        {!data_card.length == 0
+          ? data_card.map((data) => (
+              <Card
+                key={data.id}
+                id={data.id}
+                subtitle={data.subtitle}
+                descripction={data.descripction}
+                img={data.imgcard}
+              />
+            ))
+          : null}
       </div>
     </>
   );

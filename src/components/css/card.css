@@ -70,12 +70,20 @@
 .FiExternalLink{
     margin: 5px;
     color: var(--blue);
+    cursor: pointer;
 }
 
-.bi-share{
+.FiShare2{
+    display: grid;
+    justify-content: end;
+    margin: 20px;
+    color: var(--blue);
+    cursor: pointer;
+}
+/* .bi-share{
     cursor: pointer;
     font-size: 20px;
     text-align: right;
     margin: 20px;
     color: var(--blue);
-}
+} */
