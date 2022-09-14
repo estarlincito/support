@@ -1,7 +1,5 @@
 import React, { Fragment } from "react";
 import Card from "./Card";
-
-//Get UserContext
 import { useEffect } from "react";
 import { useContext } from "react";
 import UserContext from "../../context/UserContext";
@@ -12,7 +10,11 @@ const Home = () => {
   const { data_card, getDataJson } = userContext;
 
   useEffect(() => {
-    getDataJson();
+    if (data_card.length == 0) {
+      getDataJson();
+    } else {
+      return null;
+    }
   }, []);
 
   const items = [];
@@ -34,16 +36,14 @@ const Home = () => {
     <>
       <title>Estarlincito</title>
       <div className="card__container">
-
         {!data_card.length == 0 ? (
           <Card
-            id={data_card[0].id}
-            subtitle={data_card[0].subtitle}
-            descripction={data_card[0].descripction}
-            img={data_card[0].imgcard}
+            id={data_card[3].id}
+            subtitle={data_card[3].subtitle}
+            descripction={data_card[3].descripction}
+            img={data_card[3].imgcard}
           />
         ) : null}
-        
       </div>
 
       <div className="card__container card__container--2">

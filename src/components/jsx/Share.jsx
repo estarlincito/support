@@ -1,17 +1,24 @@
 import { FiCopy, FiX } from "react-icons/fi";
-// import { Link } from "react-router-dom";
-
-//Get UserContext
 import { useContext } from "react";
 import UserContext from "../../context/UserContext";
 
-//img
 const card_img = require.context("../img", true);
 
 const Share = () => {
-  //Get UserContext
   const userContext = useContext(UserContext);
-  const { selected_card, close_share } = userContext;
+  const { selected_card, close_share, setActive, curren_url_value } =
+    userContext;
+
+  const handle_closeShare_setActive = () => {
+    close_share();
+    setActive(curren_url_value == window.location.href ? true : false);
+  };
+
+  const copyToClipboard = () => {
+    navigator.clipboard.writeText(
+      `https://estarlincito.tech/#/card/${selected_card.id}`
+    );
+  };
 
   return (
     <>
@@ -21,12 +28,7 @@ const Share = () => {
             <div className="Share__header">
               <h2 className="Share__title">Compartir</h2>
 
-              <i
-                className="FiX"
-                onClick={() => {
-                  close_share();
-                }}
-              >
+              <i className="FiX" onClick={handle_closeShare_setActive}>
                 <FiX />
               </i>
             </div>
@@ -44,22 +46,15 @@ const Share = () => {
             </div>
 
             <div className="Share__link">
-              {/* <input type="text" placeholder="url" className="Share__input" /> */}
-
-              {/* Ojo aqui con esas class */}
-              <i
-                className="Copiar link"
-                onClick={navigator.clipboard.writeText(
-                  `https://estarlincito.tech/#/card/${selected_card.id}`
-                )}
-              >
+              <i className="Copiar link" onClick={copyToClipboard}>
                 <FiCopy /> Copiar link
               </i>
 
-              {/* <Link to="/" className="hare__input--bi">
+              {/* <Link to="/" replace className="hare__input--bi">
                 <i className="bi bi-envelope"></i>Compartir via email
               </Link>
-              <Link to="/" className="hare__input--bi">
+              
+              <Link to="/" replace className="hare__input--bi">
                 <i className="bi bi-whatsapp"></i>compartir via wa
               </Link> */}
             </div>

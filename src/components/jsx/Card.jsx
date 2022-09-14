@@ -1,21 +1,26 @@
 import { Link } from "react-router-dom";
 import { FiExternalLink, FiShare2 } from "react-icons/fi";
-
-//Get UserContext
 import { useContext } from "react";
 import UserContext from "../../context/UserContext";
-
-// img
 const card_img = require.context("../img", true);
 
 const Card = (props) => {
-  //Get UserContext
   const userContext = useContext(UserContext);
-  const { get_card, get_contact } = userContext;
+  const { get_card, get_contact, setActive } = userContext;
+
+  const handle_getCard_setActive = () => {
+    get_card(props.id);
+    setActive(true);
+  };
+
+  const handle_getContact_setActive = () => {
+    get_contact(props.id);
+    setActive(false);
+  };
 
   return (
     <article className="card__article">
-      <i className="FiShare2" onClick={() => get_card(props.id)}>
+      <i className="FiShare2" onClick={handle_getCard_setActive}>
         <FiShare2 />
       </i>
 
@@ -24,13 +29,13 @@ const Card = (props) => {
           <Link
             to="/contact"
             className="card__subtitle"
-            onClick={() => get_contact(props.id)}
+            onClick={handle_getContact_setActive}
           >
             <h3>{props.subtitle}</h3>
           </Link>
           <p className="card__text">{props.descripction}</p>
           <div className="card__Button">
-            <Link to="/contact" onClick={() => get_contact(props.id)}>
+            <Link to="/contact" onClick={handle_getContact_setActive}>
               Solicitar
               <i className="FiExternalLink">
                 <FiExternalLink />
@@ -41,7 +46,7 @@ const Card = (props) => {
       </figcaption>
 
       <figure className="card__figure">
-        <Link to="/contact" onClick={() => get_contact(props.id)}>
+        <Link to="/contact" onClick={handle_getContact_setActive}>
           <img
             className="card__img"
             src={card_img(`./${props.img}.svg`)}

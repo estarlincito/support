@@ -12,7 +12,7 @@ const Contact = () => {
   const [firstValue, setFirstValue] = useState(
     selected_contact ? selected_contact.subtitle : ""
   );
-  
+
   return (
     <div>
       <title>Contacto - Estarlincito</title>

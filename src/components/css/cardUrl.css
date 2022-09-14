@@ -1,0 +1,9 @@
+.card_url article{
+    max-height: 500px;
+}
+
+.card_url .card__figure {
+    border-radius: 5px 5px 0px 0px;
+    max-height: 280px;
+    width: 80%;
+  }

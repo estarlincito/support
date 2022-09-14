@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-//img
 const card_img = require.context("../img", true);
 
 const NotFound = () => {
@@ -12,7 +11,7 @@ const NotFound = () => {
         <p className="error__text">
           Esta página no existe.
           <br />
-          Puedes regresar a la <Link to="/">página principal</Link> de
+          Puedes regresar a la <Link to="/" replace>página principal</Link> de
           Estarlincito.
         </p>
         <img

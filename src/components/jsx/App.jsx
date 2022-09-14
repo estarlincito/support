@@ -10,6 +10,7 @@ import "..//css/notFound.css";
 import "..//css/share.css";
 import "..//css/card.css";
 import "..//css/contact.css";
+import "..//css/cardUrl.css";
 import "..//css/mediaScreen.css";
 import "..//font/stylesheet.css";
 // -------------CSS----------------END
@@ -22,14 +23,14 @@ import Share from "./Share";
 import Home from "./Home";
 import Service from "./Service";
 import Contact from "./Contact";
-import CardUrl from "./CardUrl"
+import CardUrl from "./CardUrl";
 import NotFound from "./NotFound";
 // -------------JSX----------------END
 
 function App() {
   return (
-    <Router>
-      <UserState>
+    <UserState>
+      <Router>
         <ScrollToTop />
         <Menu />
         <div className="container">
@@ -43,8 +44,8 @@ function App() {
           </Switch>
         </div>
         <Footer />
-      </UserState>
-    </Router>
+      </Router>
+    </UserState>
   );
 }
 export default App;

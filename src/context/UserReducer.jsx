@@ -2,6 +2,8 @@ const GET_CARD = "GET_CARD";
 const GET_DATA_JON = "GET_DATA_JON";
 const GET_CONTACT = "GET_CONTACT";
 const CLOSE_SHERE = "CLOSE_SHERE";
+const ACTIVE = "ACTIVE";
+const CURREN_URL = "CURREN_URL";
 
 export default (state, action) => {
   const { payload, type } = action;
@@ -30,6 +32,18 @@ export default (state, action) => {
         selected_contact: payload,
       };
 
+    case ACTIVE:
+      return {
+        ...state,
+        active_value: payload,
+      };
+
+    case CURREN_URL:
+      return {
+        ...state,
+        curren_url_value: payload,
+      };
+      
     default:
       return state;
   }

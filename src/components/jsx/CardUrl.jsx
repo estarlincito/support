@@ -5,18 +5,25 @@ import { useEffect } from "react";
 import Card from "./Card";
 
 const CardUrl = () => {
-  const { data_card, getDataJson } = useContext(UserContext);
-
+  const { url_id } = useParams();
+  const { data_card, getDataJson, setActive, curren_url, off_get_card } =
+    useContext(UserContext);
 
   useEffect(() => {
-    getDataJson();
+    if (data_card.length == 0) {
+      getDataJson();
+      setActive(true);
+      curren_url(window.location.href);
+    } else {
+      setActive(true);
+      curren_url(window.location.href);
+      off_get_card(null);
+    }
   }, []);
 
-  const { url_id } = useParams();
-
   return (
-    <div className="card__container">
-      {!data_card.length == 0? (
+    <div className="card_url card__container">
+      {!data_card.length == 0 ? (
         <Card
           id={data_card[url_id].id}
           subtitle={data_card[url_id].subtitle}

@@ -1,6 +1,4 @@
 import Card from "./Card";
-
-//Get UserContext
 import { useEffect } from "react";
 import { useContext } from "react";
 import UserContext from "../../context/UserContext";
@@ -11,13 +9,16 @@ const Service = () => {
   const { data_card, getDataJson } = userContext;
 
   useEffect(() => {
-    getDataJson();
+    if (data_card.length == 0) {
+      getDataJson();
+    } else {
+      return null;
+    }
   }, []);
 
   return (
     <>
       <title>Servicios - Estarlincito</title>
-
       <div className="card__container card__container--2">
         {!data_card.length == 0
           ? data_card.map((data) => (
