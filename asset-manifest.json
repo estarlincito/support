@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.e1434784.css",
-    "main.js": "/static/js/main.7b01a92a.js",
+    "main.css": "/static/css/main.164586b8.css",
+    "main.js": "/static/js/main.63f5fc78.js",
     "static/media/Rubik-Light.ttf": "/static/media/Rubik-Light.6dfd88fb878d43a4bbf1.ttf",
     "static/media/PTSans-NarrowBold.ttf": "/static/media/PTSans-NarrowBold.25266d9b8c6362bee05b.ttf",
     "static/media/PTSans-Narrow.ttf": "/static/media/PTSans-Narrow.020d261dfa00fe3148fb.ttf",
@@ -23,11 +23,11 @@
     "static/media/undraw_secure_login_pdn4__estarlincito.svg": "/static/media/undraw_secure_login_pdn4__estarlincito.108c59fad44b6507d58b.svg",
     "static/media/undraw_broadcast_jhwx__estarlincito.svg": "/static/media/undraw_broadcast_jhwx__estarlincito.87a9a689a88abba49132.svg",
     "index.html": "/index.html",
-    "main.e1434784.css.map": "/static/css/main.e1434784.css.map",
-    "main.7b01a92a.js.map": "/static/js/main.7b01a92a.js.map"
+    "main.164586b8.css.map": "/static/css/main.164586b8.css.map",
+    "main.63f5fc78.js.map": "/static/js/main.63f5fc78.js.map"
   },
   "entrypoints": [
-    "static/css/main.e1434784.css",
-    "static/js/main.7b01a92a.js"
+    "static/css/main.164586b8.css",
+    "static/js/main.63f5fc78.js"
   ]
 }
