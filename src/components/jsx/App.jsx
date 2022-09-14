@@ -22,6 +22,7 @@ import Share from "./Share";
 import Home from "./Home";
 import Service from "./Service";
 import Contact from "./Contact";
+import CardUrl from "./CardUrl"
 import NotFound from "./NotFound";
 // -------------JSX----------------END
 
@@ -37,6 +38,7 @@ function App() {
             <Route path="/contact" exact component={Contact} />
             <Route path="/service" exact component={Service} />
             <Route path="/" exact component={Home} />
+            <Route path="/card/:url_id" exact component={CardUrl} />
             <Route component={NotFound} />
           </Switch>
         </div>

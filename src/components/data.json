@@ -3,78 +3,79 @@
     "subtitle": "Auditoría informática",
     "descripction": "Identificamos las vulnerabilidades que tiene la empresa, con el objetivo de corregir e incrementar el nivel de protección y seguridad de toda la organización.",
     "imgcard": "undraw_people_re_8spw__estarlincito",
-    "id": "1"
+    "id": "0"
   },
   {
     "subtitle": "Diseño de Páginas Web",
     "descripction": "!Convierte tus perspectivas en ganancias¡",
     "imgcard": "website__estarlincito",
-    "id": "2"
+    "id": "1"
   },
   {
     "subtitle": "Desbloqueo de Celulares",
     "descripction": "Soporte: iPhone | Samsung | LG & más.",
     "imgcard": "undraw_android_jr64__estarlincito",
-    "id": "3"
+    "id": "2"
   },
   {
     "subtitle": "Soporte Técnico",
     "descripction": "Estarlincito tiene todas tus necesidades tecnológicas cubiertas.",
     "imgcard": "bug_fixing__estarlincito",
-    "id": "4"
+    "id": "3"
   },
   {
     "subtitle": "Celulares | Laptop | Tablet",
     "descripction": "Venta de Celulares, Tablet, Laptop, PC, Reloj, Bocinas y mucho más.",
     "imgcard": "pc__phone__tablet__estarlincito",
-    "id": "5"
+    "id": "4"
   },
   {
     "subtitle": "¿Ovidaste tu contraseña?",
     "descripction": "Soporte: Laptop | PC | Celulares & más.",
     "imgcard": "undraw_secure_login_pdn4__estarlincito",
-    "id": "6"
+    "id": "5"
   },
   {
     "subtitle": "Configuración APN",
     "descripction": "¿Activaste un paquete de datos móviles y no funciona el internet?",
     "imgcard": "undraw_mobile_browsers_re_kxol__estarlincito",
-    "id": "7"
+    "id": "6"
   },
   {
     "subtitle": "Instalación de Windows",
     "descripction": "¿Deseas actualizar tu Windows?",
     "imgcard": "undraw_firmware_re_fgdy__estarlincito",
-    "id": "8"
+    "id": "7"
   },
   {
     "subtitle": "Office",
     "descripction": "Los programas del paquete Oficina incluyen programas como Word, Excel, Power Point entre otros.",
     "imgcard": "undraw_add_document_re_mbjx__estarlincito",
-    "id": "9"
+    "id": "8"
   },
   {
     "subtitle": "Protección Pro Wi-Fi",
     "descripction": "¿Estás cansado de que te tomen el wifi prestado sin tu permiso?.",
     "imgcard": "undraw_broadcast_jhwx__estarlincito",
-    "id": "10"
+    "id": "9"
   },
   {
     "subtitle": "Pagos de Servicios",
     "descripction": "En Estarlincito lo hacemos por ti. Podemos pagar tus servicios de Internet, Teléfono, Telecable y más.",
     "imgcard": "undraw_digital_nomad_re_w8uy__estarlincito",
-    "id": "11"
+    "id": "10"
   },
   {
     "subtitle": "Privacidad Digital",
     "descripction": "La privacidad digital es importante porque ayuda a proteger la información más privada sobre una persona.",
     "imgcard": "undraw_safe_re_kiil__estarlincito",
-    "id": "12"
+    "id": "11"
   },
   {
     "subtitle": "Personalizar el PC",
     "descripction": "Son muchos los usuarios a los que les gusta personalizar sus escritorios o apariencia del sistema.",
     "imgcard": "undraw_personal_settings_re_i6w4__estarlincito",
-    "id": "13"
+    "id": "12",
+    "url": "personalizar-pc"
   }
 ]

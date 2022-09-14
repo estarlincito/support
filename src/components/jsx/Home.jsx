@@ -34,6 +34,7 @@ const Home = () => {
     <>
       <title>Estarlincito</title>
       <div className="card__container">
+
         {!data_card.length == 0 ? (
           <Card
             id={data_card[0].id}
@@ -42,6 +43,7 @@ const Home = () => {
             img={data_card[0].imgcard}
           />
         ) : null}
+        
       </div>
 
       <div className="card__container card__container--2">

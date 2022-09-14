@@ -11,7 +11,7 @@ const UserState = (props) => {
   const initialState = {
     data_card: [],
     selected_card: null,
-    selected_contact: null
+    selected_contact: null,
   };
 
   const [state, dispatch] = useReducer(UserReducer, initialState);
@@ -28,7 +28,7 @@ const UserState = (props) => {
     //UserState change
     dispatch({
       type: "GET_CARD",
-      payload: data_json[id - 1],
+      payload: data_json[id],
     });
   };
 
@@ -36,7 +36,7 @@ const UserState = (props) => {
     //UserState change
     dispatch({
       type: "GET_CONTACT",
-      payload: data_json[id - 1],
+      payload: data_json[id],
     });
   };
 
@@ -57,7 +57,7 @@ const UserState = (props) => {
         getDataJson: getDataJson,
         get_card: get_card,
         get_contact: get_contact,
-        close_share: close_share
+        close_share: close_share,
       }}
     >
       {props.children}

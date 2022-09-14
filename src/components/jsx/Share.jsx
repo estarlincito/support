@@ -1,4 +1,5 @@
-import { FiCopy, FiX} from "react-icons/fi";
+import { FiCopy, FiX } from "react-icons/fi";
+// import { Link } from "react-router-dom";
 
 //Get UserContext
 import { useContext } from "react";
@@ -20,9 +21,14 @@ const Share = () => {
             <div className="Share__header">
               <h2 className="Share__title">Compartir</h2>
 
-              <i className="FiX" onClick={()=>{
-                close_share();
-              }}><FiX/></i>
+              <i
+                className="FiX"
+                onClick={() => {
+                  close_share();
+                }}
+              >
+                <FiX />
+              </i>
             </div>
             <div className="Share__line"></div>
             <div className="Share__contents">
@@ -41,8 +47,15 @@ const Share = () => {
               {/* <input type="text" placeholder="url" className="Share__input" /> */}
 
               {/* Ojo aqui con esas class */}
-                <i className="Copiar link"><FiCopy/> Copiar link</i>
-              
+              <i
+                className="Copiar link"
+                onClick={navigator.clipboard.writeText(
+                  `https://estarlincito.tech/#/card/${selected_card.id}`
+                )}
+              >
+                <FiCopy /> Copiar link
+              </i>
+
               {/* <Link to="/" className="hare__input--bi">
                 <i className="bi bi-envelope"></i>Compartir via email
               </Link>
