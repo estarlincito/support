@@ -46,4 +46,8 @@
   .Share {
     width: 85%;
   }
+
+  .card_url .card__article {
+    margin-top: 40px;
+  }
 }

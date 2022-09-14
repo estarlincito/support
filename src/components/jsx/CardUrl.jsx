@@ -5,7 +5,7 @@ import { useEffect } from "react";
 import Card from "./Card";
 
 const CardUrl = () => {
-  const { data_card, close_share, getDataJson } = useContext(UserContext);
+  const { data_card, getDataJson } = useContext(UserContext);
 
 
   useEffect(() => {
@@ -14,12 +14,8 @@ const CardUrl = () => {
 
   const { url_id } = useParams();
 
-  // const data = data_card.map((todo, index) =>{
-  //   return todo.subtitle
-  // })
-
   return (
-    <>
+    <div className="card__container">
       {!data_card.length == 0? (
         <Card
           id={data_card[url_id].id}
@@ -28,7 +24,7 @@ const CardUrl = () => {
           img={data_card[url_id].imgcard}
         />
       ) : null}
-    </>
+    </div>
   );
 };
 
