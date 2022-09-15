@@ -1,13 +1,13 @@
 const GET_CARD = "GET_CARD";
 const GET_DATA_JON = "GET_DATA_JON";
 const GET_CONTACT = "GET_CONTACT";
-const CLOSE_SHERE = "CLOSE_SHERE";
 const ACTIVE = "ACTIVE";
 const CURREN_URL = "CURREN_URL";
 
 export default (state, action) => {
   const { payload, type } = action;
   switch (type) {
+    
     case GET_DATA_JON:
       return {
         ...state,
@@ -15,12 +15,6 @@ export default (state, action) => {
       };
 
     case GET_CARD:
-      return {
-        ...state,
-        selected_card: payload,
-      };
-
-    case CLOSE_SHERE:
       return {
         ...state,
         selected_card: payload,
@@ -35,7 +29,7 @@ export default (state, action) => {
     case ACTIVE:
       return {
         ...state,
-        active_value: payload,
+        footer_value: payload,
       };
 
     case CURREN_URL:
@@ -43,7 +37,7 @@ export default (state, action) => {
         ...state,
         curren_url_value: payload,
       };
-      
+
     default:
       return state;
   }

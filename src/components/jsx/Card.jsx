@@ -6,21 +6,21 @@ const card_img = require.context("../img", true);
 
 const Card = (props) => {
   const userContext = useContext(UserContext);
-  const { get_card, get_contact, setActive } = userContext;
+  const { get_card, get_contact, set_footer } = userContext;
 
-  const handle_getCard_setActive = () => {
+  const handle_getCard_set_footer = () => {
     get_card(props.id);
-    setActive(true);
+    set_footer(true);
   };
 
-  const handle_getContact_setActive = () => {
+  const handle_getContact_set_footer = () => {
     get_contact(props.id);
-    setActive(false);
+    set_footer(false);
   };
 
   return (
     <article className="card__article">
-      <i className="FiShare2" onClick={handle_getCard_setActive}>
+      <i className="FiShare2" onClick={handle_getCard_set_footer}>
         <FiShare2 />
       </i>
 
@@ -29,13 +29,13 @@ const Card = (props) => {
           <Link
             to="/contact"
             className="card__subtitle"
-            onClick={handle_getContact_setActive}
+            onClick={handle_getContact_set_footer}
           >
             <h3>{props.subtitle}</h3>
           </Link>
           <p className="card__text">{props.descripction}</p>
           <div className="card__Button">
-            <Link to="/contact" onClick={handle_getContact_setActive}>
+            <Link to="/contact" onClick={handle_getContact_set_footer}>
               Solicitar
               <i className="FiExternalLink">
                 <FiExternalLink />
@@ -46,7 +46,7 @@ const Card = (props) => {
       </figcaption>
 
       <figure className="card__figure">
-        <Link to="/contact" onClick={handle_getContact_setActive}>
+        <Link to="/contact" onClick={handle_getContact_set_footer}>
           <img
             className="card__img"
             src={card_img(`./${props.img}.svg`)}

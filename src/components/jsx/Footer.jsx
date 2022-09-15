@@ -5,15 +5,15 @@ import UserContext from "../../context/UserContext";
 const Footer = () => {
   //Get UserContext
   const userContext = useContext(UserContext);
-  const { active_value, setActive, close_share } = userContext;
+  const { footer_value, set_footer, get_card } = userContext;
 
-  const handle_closeShare_setActive = () => {
-    close_share();
-    setActive(false);
+  const handleInactive = () => {
+    get_card(null);
+    set_footer(false);
   };
 
   return (
-    <footer className={active_value ? "footer_share" : ""}>
+    <footer className={footer_value ? "footer_share" : ""}>
       <div>
         <a href="https://twitter.com/estarlincito" target="bank">
           <i className="bi bi-twitter"></i>
@@ -21,7 +21,7 @@ const Footer = () => {
       </div>
       <div>
         Copyright © 2022 {null}
-        <Link to="/" replace onClick={handle_closeShare_setActive}>
+        <Link to="/" replace onClick={handleInactive}>
           Estarlincito
         </Link>
       </div>

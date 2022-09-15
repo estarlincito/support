@@ -6,23 +6,23 @@ import UserContext from "../../context/UserContext";
 const Menu = () => {
   //Get UserContext
   const userContext = useContext(UserContext);
-  const { close_share, setActive, } = userContext;
+  const { get_card, set_footer, get_contact } = userContext;
 
-  const handle_closeShare_setActive = () => {
-    close_share();
-    setActive(false);
-    //////////////////////////////////off_get_contact(null);
+  const handleInactive = () => {
+    get_card(null);
+    set_footer(false);
+    get_contact(null);
   };
 
   return (
     <nav>
-      <Link to="/" replace onClick={handle_closeShare_setActive}>
+      <Link to="/" replace onClick={handleInactive}>
         Inicio
       </Link>
-      <Link to="/service" replace onClick={handle_closeShare_setActive}>
+      <Link to="/service" replace onClick={handleInactive}>
         Servicios
       </Link>
-      <Link to="/contact" replace onClick={handle_closeShare_setActive}>
+      <Link to="/contact" replace onClick={handleInactive}>
         Contacto
       </Link>
     </nav>

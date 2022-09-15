@@ -6,14 +6,12 @@ import UserContext from "../../context/UserContext";
 const Service = () => {
   //Get UserContext
   const userContext = useContext(UserContext);
-  const { data_card, getDataJson } = userContext;
+  const { data_card, get_data_json, get_card, set_footer } = userContext;
 
   useEffect(() => {
-    if (data_card.length == 0) {
-      getDataJson();
-    } else {
-      return null;
-    }
+    get_data_json();
+    get_card(null);
+    set_footer(false);
   }, []);
 
   return (

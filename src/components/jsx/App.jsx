@@ -29,7 +29,6 @@ import NotFound from "./NotFound";
 
 function App() {
 
-  console.log("..")
   return (
     <UserState>
       <Router>

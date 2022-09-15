@@ -9,62 +9,36 @@ const UserState = (props) => {
     data_card: [],
     selected_card: null,
     selected_contact: null,
-    active_value: false,
+    footer_value: false,
     curren_url_value: null,
   };
 
   const [state, dispatch] = useReducer(UserReducer, initialState);
 
-  const getDataJson = () => {
-    //UserState change
+  const get_data_json = () => {
     dispatch({
       type: "GET_DATA_JON",
       payload: data_json,
     });
   };
 
-  const get_card = (id) => {
-    //UserState change
+  const get_card = (parr) => {
+    const value = data_json[parr];
     dispatch({
       type: "GET_CARD",
-      payload: data_json[id],
+      payload: parr === null ? null : value,
     });
   };
 
-  const off_get_card = (value) => {
-    //UserState change
-    dispatch({
-      type: "GET_CARD",
-      payload: value,
-    });
-  };
-
-  const get_contact = (id) => {
-    //UserState change
+  const get_contact = (parr) => {
+    const value = data_json[parr];
     dispatch({
       type: "GET_CONTACT",
-      payload: data_json[id],
+      payload: parr === null ? null : value,
     });
   };
 
-  const off_get_contact = (value) => {
-    //UserState change
-    dispatch({
-      type: "GET_CONTACT",
-      payload: value,
-    });
-  };
-
-  const close_share = () => {
-    //UserState change
-    dispatch({
-      type: "CLOSE_SHERE",
-      payload: null,
-    });
-  };
-
-  const setActive = (value) => {
-    //UserState change
+  const set_footer = (value) => {
     dispatch({
       type: "ACTIVE",
       payload: value,
@@ -72,7 +46,6 @@ const UserState = (props) => {
   };
 
   const curren_url = (value) => {
-    //UserState change
     dispatch({
       type: "CURREN_URL",
       payload: value,
@@ -82,19 +55,20 @@ const UserState = (props) => {
   return (
     <UserContext.Provider
       value={{
+        
+        //objects
         data_card: state.data_card,
         selected_card: state.selected_card,
         selected_contact: state.selected_contact,
         curren_url_value: state.curren_url_value,
-        active_value: state.active_value,
-        getDataJson: getDataJson,
+        footer_value: state.footer_value,
+
+        //functions
+        get_data_json: get_data_json,
         get_card: get_card,
-        off_get_card: off_get_card,
         get_contact: get_contact,
-        close_share: close_share,
-        setActive: setActive,
+        set_footer: set_footer,
         curren_url: curren_url,
-        off_get_contact: off_get_contact
       }}
     >
       {props.children}

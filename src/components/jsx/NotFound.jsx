@@ -1,8 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import { useContext } from "react";
+import UserContext from "../../context/UserContext";
 const card_img = require.context("../img", true);
 
 const NotFound = () => {
+  //Get UserContext
+  const userContext = useContext(UserContext);
+  const { get_card, set_footer } = userContext;
+
+  useEffect(() => {
+    get_card(null);
+    set_footer(false);
+  }, []);
+
   return (
     <div className="error">
       <div></div>
@@ -11,8 +23,11 @@ const NotFound = () => {
         <p className="error__text">
           Esta página no existe.
           <br />
-          Puedes regresar a la <Link to="/" replace>página principal</Link> de
-          Estarlincito.
+          Puedes regresar a la{" "}
+          <Link to="/" replace>
+            página principal
+          </Link>{" "}
+          de Estarlincito.
         </p>
         <img
           className="error__img"

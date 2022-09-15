@@ -6,19 +6,14 @@ import Card from "./Card";
 
 const CardUrl = () => {
   const { url_id } = useParams();
-  const { data_card, getDataJson, setActive, curren_url, off_get_card } =
+  const { data_card, get_data_json, set_footer, curren_url, get_card } =
     useContext(UserContext);
 
   useEffect(() => {
-    if (data_card.length == 0) {
-      getDataJson();
-      setActive(true);
-      curren_url(window.location.href);
-    } else {
-      setActive(true);
-      curren_url(window.location.href);
-      off_get_card(null);
-    }
+    get_data_json();
+    set_footer(true);
+    curren_url(window.location.href);
+    get_card(null);
   }, []);
 
   return (
