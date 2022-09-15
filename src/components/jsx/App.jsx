@@ -28,6 +28,8 @@ import NotFound from "./NotFound";
 // -------------JSX----------------END
 
 function App() {
+
+  console.log("..")
   return (
     <UserState>
       <Router>
