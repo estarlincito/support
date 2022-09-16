@@ -23,7 +23,7 @@ const UserState = (props) => {
   };
 
   const get_card = (parr) => {
-    const value = parr === null ? null : data_json[parr].card;
+    const value = parr === null ? null : data_json[parr-1].card;
     dispatch({
       type: "GET_CARD",
       payload: value,
@@ -31,7 +31,7 @@ const UserState = (props) => {
   };
 
   const get_contact = (parr) => {
-    const value = parr === null ? null : data_json[parr].card;
+    const value = parr === null ? null : data_json[parr-1].card;
     dispatch({
       type: "GET_CONTACT",
       payload: value,
