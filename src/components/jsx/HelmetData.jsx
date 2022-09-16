@@ -7,6 +7,7 @@ const card_img = require.context("../assets/img", true);
 const HelmetData = (props) => {
   return (
     <Helmet>
+      <title>{props.title}</title>
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content="Estarlincito" />
       <meta property="og:url" content={props.url} />
@@ -17,9 +18,6 @@ const HelmetData = (props) => {
         content={`https://estarlincito.tech${card_img(`./${props.img}`)}`}
         sizes="152x152"
       />
-      {/* <link rel="icon" href={card_img("./favicon-96x96.ico")} /> */}
-      <title>{props.title}</title>
-      {/* %PUBLIC_URL%/favicon-96x96.ico */}
     </Helmet>
   );
 };
