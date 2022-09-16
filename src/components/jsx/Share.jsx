@@ -15,7 +15,7 @@ const Share = () => {
 
   const copyToClipboard = () => {
     navigator.clipboard.writeText(
-      `https://estarlincito.tech/#/card/${selected_card.id}`
+      `https://estarlincito.tech/#/${selected_card.url}`
     );
   };
 
