@@ -1,31 +1,34 @@
-.error{
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 20px  auto 80px;
-    text-align: center;
+.error {
+  border-radius: 20px;
+  text-align: center;
+  margin: auto;
+  padding: 20px;
+  margin-top: 30px;
+  width: 80%;
 }
 
-.error__info{
-    margin: auto;
+.error__info {
+  height: 500px;
 }
 
-.error__img{
-    max-width: 90%;
-    margin-top: 30px;
+.error__img {
+  width: 70%;
+  height: 300px;
+  margin-top: 30px;
 }
 
-.error__title{
-    font-family: 'PT Sans Narrow';
-    font-weight: bold;
-    font-style: normal;
-    font-size: 30px;
-    margin-bottom: 10px;
+.error__title {
+  font-family: "PT Sans Narrow";
+  font-weight: bold;
+  font-style: normal;
+  font-size: 30px;
+  margin-bottom: 10px;
 }
 
-.error__text{
-    font-family: 'Rubik';
-    font-weight: 300;
-    font-style: normal;
-    font-size: 20px;
-    margin-top: 10px;
+.error__text {
+  font-family: "Rubik";
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+  margin-top: 10px;
 }

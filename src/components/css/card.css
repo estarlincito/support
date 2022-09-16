@@ -21,11 +21,8 @@
 }
 
 .card__figure {
-  margin: auto;
-  background-color: var(--white);
-  border-radius: 5px 5px 0px 0px;
+  margin: 50px;
   height: 400px;
-  width: 80%;
 }
 .card__img {
   -webkit-user-select: none;

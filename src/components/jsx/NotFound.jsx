@@ -6,7 +6,6 @@ import UserContext from "../../context/UserContext";
 const card_img = require.context("../assets/img", true);
 
 const NotFound = () => {
-  
   const userContext = useContext(UserContext);
   const { get_card, set_footer } = userContext;
 
@@ -17,7 +16,6 @@ const NotFound = () => {
 
   return (
     <div className="error">
-      <div></div>
       <div className="error__info">
         <h2 className="error__title">Lo sentimos…</h2>
         <p className="error__text">
@@ -35,7 +33,6 @@ const NotFound = () => {
           alt=""
         />
       </div>
-      <div></div>
     </div>
   );
 };
