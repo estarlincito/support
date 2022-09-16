@@ -27,16 +27,22 @@ const HelmetData = (props) => {
       <meta property="twitter:image" content="" /> */}
 
       <title>{props.title}</title>
-      <meta property="og:type" content="website" />
-      <meta property="og:site_name" content="Estarlincito" />
+      {/* <meta property="og:type" content="website" />
+      <meta property="og:site_name" content="Estarlincito" /> */}
+
+      <meta name="title" content={props.title} />
+      <meta name="description" content={props.description} />
       <meta property="og:url" content={props.url} />
+
+      {/* <meta property="og:url" content={props.url} />
       <meta property="og:title" content={props.title} />
-      <meta property="og:description" content={props.description} />
-      <meta
+      <meta property="og:description" content={props.description} /> */}
+
+      {/* <meta
         property="og:image"
         content={`https://estarlincito.tech${card_img(`./${props.img}`)}`}
         sizes="152x152"
-      />
+      /> */}
     </Helmet>
   );
 };

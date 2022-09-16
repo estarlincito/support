@@ -3,7 +3,7 @@ import Card from "./Card";
 import { useEffect } from "react";
 import { useContext } from "react";
 import UserContext from "../../context/UserContext";
-// import HelmetData from "./HelmetData";
+import HelmetData from "./HelmetData";
 
 const Home = () => {
   const userContext = useContext(UserContext);
@@ -32,12 +32,12 @@ const Home = () => {
 
   return (
     <>
-      {/* <HelmetData
+      <HelmetData
         url="https://estarlincito.tech"
         title="Home"
         description="¡Soporte técnico, diseño web y mucho más!"
-        img="favicon-96x96.ico"
-      /> */}
+        // img="favicon-96x96.ico"
+      />
       <div className="card__container">
         {data_card.length != 0 ? (
           <Card
