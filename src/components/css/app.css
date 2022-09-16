@@ -35,3 +35,9 @@ a {
   margin-bottom: 30px;
 }
 
+.user_select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

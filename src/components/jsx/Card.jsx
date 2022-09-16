@@ -6,7 +6,7 @@ const card_img = require.context("../assets/img", true);
 
 const Card = (props) => {
   const userContext = useContext(UserContext);
-  const { get_card, get_contact, set_footer } = userContext;
+  const { selected_card, get_card, get_contact, set_footer } = userContext;
 
   const handle_getCard_set_footer = () => {
     get_card(props.id);
@@ -19,7 +19,7 @@ const Card = (props) => {
   };
 
   return (
-    <article className="card__article">
+    <article className={selected_card ? "card__article user_select": "card__article"}>
       <i className="FiShare2" onClick={handle_getCard_set_footer}>
         <FiShare2 />
       </i>
