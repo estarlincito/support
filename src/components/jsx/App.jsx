@@ -1,6 +1,7 @@
 import React from "react";
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import UserState from "../../context/UserState";
+import { Helmet } from "react-helmet";
 
 // -------------CSS----------------
 import "..//css/app.css";
@@ -25,14 +26,21 @@ import Service from "./Service";
 import Contact from "./Contact";
 import CardUrl from "./CardUrl";
 import NotFound from "./NotFound";
-import Head from "./Head";
+// import Head from "./Head";
 // -------------JSX----------------END
 
 function App() {
   return (
     <Router>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+          rel="icon"
+          href="https://estarlincito.tech/static/media/favicon-96x96.2c60b5c1b9aab9f1400b.ico"
+        />
+      </Helmet>
       <UserState>
-        <Head/>
         <ScrollToTop />
         <Menu />
         <div className="container">
