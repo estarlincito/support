@@ -7,7 +7,6 @@ const CURREN_URL = "CURREN_URL";
 export default (state, action) => {
   const { payload, type } = action;
   switch (type) {
-    
     case GET_DATA_JON:
       return {
         ...state,

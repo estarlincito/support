@@ -4,7 +4,7 @@ import { useContext } from "react";
 import UserContext from "../../context/UserContext";
 
 const Menu = () => {
-  //Get UserContext
+  
   const userContext = useContext(UserContext);
   const { get_card, set_footer, get_contact } = userContext;
 

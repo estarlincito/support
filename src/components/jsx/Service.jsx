@@ -4,7 +4,6 @@ import { useContext } from "react";
 import UserContext from "../../context/UserContext";
 
 const Service = () => {
-  //Get UserContext
   const userContext = useContext(UserContext);
   const { data_card, get_data_json, get_card, set_footer } = userContext;
 
@@ -18,14 +17,14 @@ const Service = () => {
     <>
       <title>Servicios - Estarlincito</title>
       <div className="card__container card__container--2">
-        {!data_card.length == 0
+        {data_card.length != 0
           ? data_card.map((data) => (
               <Card
-                key={data.id}
-                id={data.id}
-                subtitle={data.subtitle}
-                descripction={data.descripction}
-                img={data.imgcard}
+                key={data.card.id}
+                id={data.card.id}
+                subtitle={data.card.subtitle}
+                descripction={data.card.descripction}
+                img={data.card.img}
               />
             ))
           : null}

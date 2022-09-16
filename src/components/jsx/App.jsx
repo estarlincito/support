@@ -12,7 +12,7 @@ import "..//css/card.css";
 import "..//css/contact.css";
 import "..//css/cardUrl.css";
 import "..//css/mediaScreen.css";
-import "..//font/stylesheet.css";
+import "..//assets/font/stylesheet.css";
 // -------------CSS----------------END
 
 // -------------JSX----------------
@@ -28,10 +28,9 @@ import NotFound from "./NotFound";
 // -------------JSX----------------END
 
 function App() {
-
   return (
-    <UserState>
-      <Router>
+    <Router>
+      <UserState>
         <ScrollToTop />
         <Menu />
         <div className="container">
@@ -40,13 +39,13 @@ function App() {
             <Route path="/contact" exact component={Contact} />
             <Route path="/service" exact component={Service} />
             <Route path="/" exact component={Home} />
-            <Route path="/card/:url_id" exact component={CardUrl} />
+            <Route path="/:url_id" exact component={CardUrl} />
             <Route component={NotFound} />
           </Switch>
         </div>
         <Footer />
-      </Router>
-    </UserState>
+      </UserState>
+    </Router>
   );
 }
 export default App;

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { FiExternalLink, FiShare2 } from "react-icons/fi";
 import { useContext } from "react";
 import UserContext from "../../context/UserContext";
-const card_img = require.context("../img", true);
+const card_img = require.context("../assets/img", true);
 
 const Card = (props) => {
   const userContext = useContext(UserContext);

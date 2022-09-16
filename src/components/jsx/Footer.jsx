@@ -3,7 +3,6 @@ import { useContext } from "react";
 import UserContext from "../../context/UserContext";
 
 const Footer = () => {
-  //Get UserContext
   const userContext = useContext(UserContext);
   const { footer_value, set_footer, get_card } = userContext;
 

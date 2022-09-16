@@ -2,7 +2,7 @@ import { FiCopy, FiX } from "react-icons/fi";
 import { useContext } from "react";
 import UserContext from "../../context/UserContext";
 
-const card_img = require.context("../img", true);
+const card_img = require.context("../assets/img", true);
 
 const Share = () => {
   const userContext = useContext(UserContext);
@@ -13,7 +13,6 @@ const Share = () => {
     set_footer(curren_url_value === window.location.href ? true : false);
   };
 
-  // console.log(curren_url_value)
   const copyToClipboard = () => {
     navigator.clipboard.writeText(
       `https://estarlincito.tech/#/card/${selected_card.id}`
@@ -35,7 +34,7 @@ const Share = () => {
             <div className="Share__line"></div>
             <div className="Share__contents">
               <img
-                src={card_img(`./${selected_card.imgcard}.svg`)}
+                src={card_img(`./${selected_card.img}.svg`)}
                 alt=""
                 className="Share__img"
               />
@@ -49,14 +48,6 @@ const Share = () => {
               <i className="Copiar link" onClick={copyToClipboard}>
                 <FiCopy /> Copiar link
               </i>
-
-              {/* <Link to="/" replace className="hare__input--bi">
-                <i className="bi bi-envelope"></i>Compartir via email
-              </Link>
-              
-              <Link to="/" replace className="hare__input--bi">
-                <i className="bi bi-whatsapp"></i>compartir via wa
-              </Link> */}
             </div>
           </div>
         </div>

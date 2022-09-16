@@ -23,18 +23,18 @@ const UserState = (props) => {
   };
 
   const get_card = (parr) => {
-    const value = data_json[parr];
+    const value = parr === null ? null : data_json[parr].card;
     dispatch({
       type: "GET_CARD",
-      payload: parr === null ? null : value,
+      payload: value,
     });
   };
 
   const get_contact = (parr) => {
-    const value = data_json[parr];
+    const value = parr === null ? null : data_json[parr].card;
     dispatch({
       type: "GET_CONTACT",
-      payload: parr === null ? null : value,
+      payload: value,
     });
   };
 
@@ -55,7 +55,6 @@ const UserState = (props) => {
   return (
     <UserContext.Provider
       value={{
-        
         //objects
         data_card: state.data_card,
         selected_card: state.selected_card,

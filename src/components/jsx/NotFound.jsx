@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import { useContext } from "react";
 import UserContext from "../../context/UserContext";
-const card_img = require.context("../img", true);
+const card_img = require.context("../assets/img", true);
 
 const NotFound = () => {
-  //Get UserContext
+  
   const userContext = useContext(UserContext);
   const { get_card, set_footer } = userContext;
 
