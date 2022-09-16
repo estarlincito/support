@@ -25,12 +25,14 @@ import Service from "./Service";
 import Contact from "./Contact";
 import CardUrl from "./CardUrl";
 import NotFound from "./NotFound";
+import Head from "./Head";
 // -------------JSX----------------END
 
 function App() {
   return (
     <Router>
       <UserState>
+        <Head/>
         <ScrollToTop />
         <Menu />
         <div className="container">
