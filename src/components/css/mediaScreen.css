@@ -30,7 +30,15 @@
     width: 80%;
   }
   .error {
-    margin-top: 50px;
+    margin-top: 60px;
+  }
+
+  .error__info {
+    height: 400px;
+  }
+
+  .error__img {
+    margin-top: 5px;
   }
 
   .error__text {
