@@ -33,7 +33,7 @@ const Card = (props) => {
           >
             <h3>{props.subtitle}</h3>
           </Link>
-          <p className="card__text">{props.descripction}</p>
+          <p className="card__text">{props.description}</p>
           <div className="card__Button">
             <Link to="/contact" onClick={handle_getContact_set_footer}>
               Solicitar

@@ -4,17 +4,12 @@ import UserContext from "../../context/UserContext";
 import { useEffect } from "react";
 import Card from "./Card";
 import NotFound from "./NotFound";
+import HelmetData from "./HelmetData";
 
 const CardUrl = () => {
-  const { url_id } = useParams("");
-  const {
-    data_card,
-    get_data_json,
-    set_footer,
-    curren_url,
-    get_card,
-  } = useContext(UserContext);
-
+  const { url_id } = useParams();
+  const { data_card, get_data_json, set_footer, curren_url, get_card } =
+    useContext(UserContext);
   useEffect(() => {
     get_data_json();
     set_footer(true);
@@ -25,18 +20,31 @@ const CardUrl = () => {
   const data_url = data_card.find((data) => data.card.url === url_id);
 
   return (
-    <div className="card_url card__container">
+    <>
       {data_url == undefined ? (
         <NotFound />
       ) : (
-        <Card
-          id={data_url.card.id}
-          subtitle={data_url.card.subtitle}
-          descripction={data_url.card.descripction}
-          img={data_url.card.img}
+        <HelmetData
+          url={`https://estarlincito.tech/#/${data_url.card.url}`}
+          title={data_url.card.subtitle}
+          description={data_url.card.description}
+          img={data_url.card.img+".svg"}
         />
       )}
-    </div>
+
+      <div className="card_url card__container">
+        {data_url == undefined ? (
+          <NotFound />
+        ) : (
+          <Card
+            id={data_url.card.id}
+            subtitle={data_url.card.subtitle}
+            description={data_url.card.description}
+            img={data_url.card.img}
+          />
+        )}
+      </div>
+    </>
   );
 };
 

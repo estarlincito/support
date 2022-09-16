@@ -40,7 +40,7 @@ const Share = () => {
               />
               <div>
                 <h3 className="Share__subtiitle">{selected_card.subtitle}</h3>
-                <p className="Share__text">{selected_card.descripction}</p>
+                <p className="Share__text">{selected_card.description}</p>
               </div>
             </div>
 

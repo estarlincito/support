@@ -23,7 +23,7 @@ const Home = () => {
         <Card
           id={data_card[i].card.id}
           subtitle={data_card[i].card.subtitle}
-          descripction={data_card[i].card.descripction}
+          description={data_card[i].card.description}
           img={data_card[i].card.img}
         />
       );
@@ -43,7 +43,7 @@ const Home = () => {
           <Card
             id={data_card[3].card.id}
             subtitle={data_card[3].card.subtitle}
-            descripction={data_card[3].card.descripction}
+            description={data_card[3].card.description}
             img={data_card[3].card.img}
           />
         ) : null}

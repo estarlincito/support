@@ -23,7 +23,7 @@ const Service = () => {
                 key={data.card.id}
                 id={data.card.id}
                 subtitle={data.card.subtitle}
-                descripction={data.card.descripction}
+                description={data.card.description}
                 img={data.card.img}
               />
             ))
