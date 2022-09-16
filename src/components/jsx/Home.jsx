@@ -34,7 +34,7 @@ const Home = () => {
     <>
       <HelmetData
         url="https://estarlincito.tech"
-        title="Estarlincito"
+        title="Home"
         description="¡Soporte técnico, diseño web y mucho más!"
         img="favicon-96x96.ico"
       />
