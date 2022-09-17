@@ -1,7 +1,6 @@
 import { FiCopy, FiX } from "react-icons/fi";
 import { useContext } from "react";
 import UserContext from "../../context/UserContext";
-
 const card_img = require.context("../assets/img", true);
 
 const Share = () => {

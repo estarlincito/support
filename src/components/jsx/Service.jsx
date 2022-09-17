@@ -1,7 +1,7 @@
 import Card from "./Card";
-import { useEffect } from "react";
-import { useContext } from "react";
+import { useEffect, useContext } from "react";
 import UserContext from "../../context/UserContext";
+import HelmetData from "./HelmetData";
 
 const Service = () => {
   const userContext = useContext(UserContext);
@@ -15,9 +15,9 @@ const Service = () => {
 
   return (
     <>
-      <title>Servicios - Estarlincito</title>
+    <HelmetData title="Servicios"/>
       <div className="card__container card__container--2">
-        {data_card.length != 0
+        {data_card.length !== 0
           ? data_card.map((data) => (
               <Card
                 key={data.card.id}

@@ -20,31 +20,26 @@ const CardUrl = () => {
   const data_url = data_card.find((data) => data.card.url === url_id);
 
   return (
-    <>
+    <div className="card_url card__container">
       {data_url == undefined ? (
         <NotFound />
       ) : (
-        <HelmetData
-          url={`https://estarlincito.tech/#/${data_url.card.url}`}
-          title={data_url.card.subtitle}
-          description={data_url.card.description}
-          img={data_url.card.img+".svg"}
-        />
-      )}
-
-      <div className="card_url card__container">
-        {data_url == undefined ? (
-          <NotFound />
-        ) : (
+        <>
+          <HelmetData
+            title={data_url.card.subtitle}
+            // url={`https://estarlincito.tech/#/${data_url.card.url}`}
+            // description={data_url.card.description}
+            // img={data_url.card.img + ".svg"}
+          />
           <Card
             id={data_url.card.id}
             subtitle={data_url.card.subtitle}
             description={data_url.card.description}
             img={data_url.card.img}
           />
-        )}
-      </div>
-    </>
+        </>
+      )}
+    </div>
   );
 };
 

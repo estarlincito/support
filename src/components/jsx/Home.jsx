@@ -17,7 +17,7 @@ const Home = () => {
 
   const items = [];
 
-  if (data_card.length != 0) {
+  if (data_card.length !== 0) {
     for (let i = 9; i < data_card.length; i++) {
       items.push(
         <Card
@@ -33,13 +33,13 @@ const Home = () => {
   return (
     <>
       <HelmetData
-        url="https://estarlincito.tech"
         title="Home"
-        description="¡Soporte técnico, diseño web y mucho más!"
+        // url="https://estarlincito.tech"
+        // description="¡Soporte técnico, diseño web y mucho más!"
         // img="favicon-96x96.ico"
       />
       <div className="card__container">
-        {data_card.length != 0 ? (
+        {data_card.length !== 0 ? (
           <Card
             id={data_card[3].card.id}
             subtitle={data_card[3].card.subtitle}

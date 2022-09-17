@@ -1,8 +1,6 @@
-import React from "react";
-import { useState } from "react";
-
-import { useContext } from "react";
+import React, { useContext, useState } from "react";
 import UserContext from "../../context/UserContext";
+import HelmetData from "./HelmetData";
 
 const Contact = () => {
   const userContext = useContext(UserContext);
@@ -13,8 +11,8 @@ const Contact = () => {
   );
 
   return (
-    <div>
-      <title>Contacto - Estarlincito</title>
+    <>
+      <HelmetData title="Contacto" />
       <form
         className="form"
         action="https://formspree.io/f/mzbovyaw"
@@ -70,7 +68,7 @@ const Contact = () => {
           <input type="submit" value="Enviar" className="form__cta" />
         </div>
       </form>
-    </div>
+    </>
   );
 };
 
