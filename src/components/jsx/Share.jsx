@@ -44,7 +44,7 @@ const Share = () => {
             </div>
 
             <div className="Share__link">
-              <i className="Copiar link" onClick={copyToClipboard}>
+              <i className="FiCopy" onClick={copyToClipboard}>
                 <FiCopy /> Copiar link
               </i>
             </div>

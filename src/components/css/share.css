@@ -13,24 +13,29 @@
   background-color: var(--whiteCard);
   background-color: white;
   margin: auto;
+  padding: 10px;
 }
 
 .Share__header {
   display: grid;
-  border-radius: 10px 10px 0px 0px;
   grid-template-columns: auto auto;
   justify-content: space-between;
-  padding: 20px;
+  background-color: rgb(242, 241, 241);
 }
 
-.Share__line {
+.Share__title {
+padding: 10px;
+}
+
+/* .Share__line {
   display: grid;
   justify-content: center;
   background-color: rgba(11, 1, 1, 0.44);
   height: 1px;
   width: 95%;
   margin: auto;
-}
+} */
+
 .Share__contents {
   display: grid;
   grid-template-columns: 110px auto;
@@ -47,7 +52,6 @@
   height: 100px;
   border-radius: 5px;
   background-color: var(--whiteCard);
-  border-radius: 5px;
   box-shadow: 1px 1px 1px 1px #4242423e;
 }
 
@@ -64,17 +68,19 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  color: rgb(10, 149, 241);
+  color: rgb(6, 129, 210);
+  width: 30%;
   display: grid;
-  grid-template-columns: auto;
-  padding: 20px;
+  justify-content: start;
   cursor: pointer;
-  font-size: 15px;
 }
 
 .Share__link:active {
-  color: black;
-  font-size: 20px;
+  font-weight: bold;
+}
+
+.FiCopy:active{
+  font-size: 18px;
 }
 
 .FiX {
@@ -82,12 +88,14 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  font-size: 30px;
+  background-color: rgb(213, 212, 212);
   color: black;
+  padding: 10px;
   cursor: pointer;
+  font-size: 25px;
 }
 
 .FiX:active {
-  color: rgb(10, 149, 241);
-  font-size: 35px;
+  background-color: black;
+  color: rgb(213, 212, 212);
 }

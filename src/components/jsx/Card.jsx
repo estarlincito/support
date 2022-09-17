@@ -19,10 +19,14 @@ const Card = (props) => {
   };
 
   return (
-    <article className={selected_card ? "card__article user_select": "card__article"}>
-      <i className="FiShare2" onClick={handle_getCard_set_footer}>
-        <FiShare2 />
-      </i>
+    <article
+      className={selected_card ? "card__article user_select" : "card__article"}
+    >
+      <div className="share_button">
+        <i className="FiShare2" onClick={handle_getCard_set_footer}>
+          <FiShare2 />
+        </i>
+      </div>
 
       <figcaption className="card__figcaption">
         <div className="card__figcaption_text">
