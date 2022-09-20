@@ -10,6 +10,7 @@ const CardUrl = () => {
   const { url_id } = useParams();
   const { data_card, get_data_json, set_footer, curren_url, get_card } =
     useContext(UserContext);
+
   useEffect(() => {
     get_data_json();
     set_footer(true);
@@ -17,11 +18,21 @@ const CardUrl = () => {
     get_card(null);
   }, []);
 
-  const data_url = data_card.find((data) => data.card.url === url_id);
+  const data_length = Object.keys(data_card).length;
+
+  const data_url = {
+    card: "",
+  };
+
+  if (data_length !== 0) {
+    data_url.card = data_card.card.find((data) => data.url === url_id);
+  } else {
+    return null;
+  }
 
   return (
     <div className="card_url card__container">
-      {data_url == undefined ? (
+      {data_url.card == undefined ? (
         <NotFound />
       ) : (
         <>

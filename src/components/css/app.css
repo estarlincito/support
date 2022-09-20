@@ -4,7 +4,7 @@
   --blackNav: #2c2c2c;
   --blackClair: #3f3f3f;
   --white: #ffffff;
-  --whiteCard: #fbfbfb;
+  --whiteCard: #e0e0e0;
   --whitekNav: #d9d9dd;
   --forminputc: #bbb0bb;
 }
@@ -20,7 +20,7 @@
 }
 
 body {
-  background-color: var(--white);
+  background-color: var(--whiteCard);
 }
 
 a {

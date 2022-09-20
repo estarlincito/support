@@ -14,7 +14,7 @@
 
 .card__article {
   display: grid;
-  background-color: var(--whiteCard);
+  background-color: var(--white);
   text-align: center;
   margin: 20px;
   border-radius: 5px;

@@ -26,7 +26,7 @@
     padding: .8em 1em;
     outline: none;
     border: none;
-    border: 1px solid var(--forminputc);
+    border: 0.5px solid var(--forminputc);
     border-radius: 0.2em;
 }
 

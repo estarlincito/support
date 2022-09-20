@@ -13,18 +13,20 @@ const Service = () => {
     set_footer(false);
   }, []);
 
+  const data_length = Object.keys(data_card).length;
+
   return (
     <>
-    <HelmetData title="Servicios"/>
+      <HelmetData title="Servicios" />
       <div className="card__container card__container--2">
-        {data_card.length !== 0
-          ? data_card.map((data) => (
+        {data_length !== 0
+          ? data_card.card.map((data) => (
               <Card
-                key={data.card.id}
-                id={data.card.id}
-                subtitle={data.card.subtitle}
-                description={data.card.description}
-                img={data.card.img}
+                key={data.url}
+                id={data.id}
+                subtitle={data.subtitle}
+                description={data.description}
+                img={data.img}
               />
             ))
           : null}

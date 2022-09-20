@@ -21,6 +21,7 @@ const Card = (props) => {
   return (
     <article
       className={selected_card ? "card__article user_select" : "card__article"}
+      key={props.url}
     >
       <div className="share_button">
         <i className="FiShare2" onClick={handle_getCard_set_footer}>

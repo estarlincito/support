@@ -16,15 +16,17 @@ const Home = () => {
   }, []);
 
   const items = [];
+  const data_length = Object.keys(data_card).length;
 
-  if (data_card.length !== 0) {
-    for (let i = 9; i < data_card.length; i++) {
+  if (data_length !== 0) {
+    for (let i = 9; i < data_card.card.length; i++) {
       items.push(
         <Card
-          id={data_card[i].card.id}
-          subtitle={data_card[i].card.subtitle}
-          description={data_card[i].card.description}
-          img={data_card[i].card.img}
+          id={data_card.card[i].id}
+          subtitle={data_card.card[i].subtitle}
+          description={data_card.card[i].description}
+          img={data_card.card[i].img}
+          url={data_card.card[i].url}
         />
       );
     }
@@ -39,12 +41,13 @@ const Home = () => {
         // img="favicon-96x96.ico"
       />
       <div className="card__container">
-        {data_card.length !== 0 ? (
+        {data_length !== 0 ? (
           <Card
-            id={data_card[3].card.id}
-            subtitle={data_card[3].card.subtitle}
-            description={data_card[3].card.description}
-            img={data_card[3].card.img}
+            id={data_card.card[3].id}
+            subtitle={data_card.card[3].subtitle}
+            description={data_card.card[3].description}
+            img={data_card.card[3].img}
+            url={data_card.card[3].url}
           />
         ) : null}
       </div>

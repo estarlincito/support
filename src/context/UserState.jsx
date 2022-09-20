@@ -6,7 +6,7 @@ import data_json from "../components/data.json";
 //UserState initialState
 const UserState = (props) => {
   const initialState = {
-    data_card: [],
+    data_card: {},
     selected_card: null,
     selected_contact: null,
     footer_value: false,
@@ -23,7 +23,7 @@ const UserState = (props) => {
   };
 
   const get_card = (parr) => {
-    const value = parr === null ? null : data_json[parr-1].card;
+    const value = parr === null ? null : data_json.card[parr-1];
     dispatch({
       type: "GET_CARD",
       payload: value,
@@ -31,7 +31,7 @@ const UserState = (props) => {
   };
 
   const get_contact = (parr) => {
-    const value = parr === null ? null : data_json[parr-1].card;
+    const value = parr === null ? null : data_json.card[parr-1];
     dispatch({
       type: "GET_CONTACT",
       payload: value,
