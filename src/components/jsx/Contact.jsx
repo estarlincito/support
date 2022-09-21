@@ -26,6 +26,7 @@ const Contact = () => {
             className="form__input"
             name="name"
             title="Por favor escriba su nombre"
+            autoFocus
             required
           />
 
