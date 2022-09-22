@@ -1,11 +1,13 @@
 .card__container {
   display: grid;
-  grid-template-columns: auto;
 }
 
-/* card__container--2 */
 .card__container--2 {
   grid-template-columns: auto auto;
+}
+
+.card__container--2 .card__article {
+  background-color: var(--whiteCard);
 }
 
 .card__container--2 .card__figcaption {
@@ -13,90 +15,58 @@
 }
 
 .card__article {
-  display: grid;
   background-color: var(--white);
-  text-align: center;
-  margin: 20px;
+  height: 600px;
+  margin: 2px;
   border-radius: 5px;
+  display: grid;
+  text-align: center;
 }
 
 .card__figure {
-  margin: 50px;
-  height: 400px;
+  height: 300px;
+  margin-top: 20px;
 }
 .card__img {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
   width: 100%;
   height: 100%;
 }
 .card__figcaption {
-  display: grid;
-  margin: auto;
+  color: var(--black);
   height: 200px;
   width: 40%;
-}
-
-.card__figcaption_text {
+  display: grid;
   margin: auto;
 }
 
 .card__subtitle {
-  color: var(--black);
-  font-family: "PT Sans Narrow";
-  font-weight: bold;
-  font-style: normal;
   font-size: 30px;
+  margin: auto;
+  font-family: "PT Sans Narrow";
 }
 
 .card__text {
+  font-size: 25px;
+  margin: auto;
   font-family: "Rubik";
-  font-weight: 300;
-  font-style: normal;
-  font-size: 20px;
-  margin-top: 10px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
-.card__Button {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  text-align: center;
-  margin: auto;
-  max-width: 100px;
-  padding: 20px;
-  border-radius: 5px;
-}
-
-.card__Button a:active {
-  color: var(--black);
-  font-size: 20px;
-}
-
-.card__Button a i {
-  margin: 3px;
-}
-
-.share_button {
+.card__apply_for {
+  margin: 10px;
   display: grid;
-  justify-content: end;
+}
+.card__apply_for:active {
+  color: var(--black);
 }
 
-.FiShare2 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+.card__FiShare2 {
   color: var(--blue);
-  margin: 20px;
+  margin: 30px 0px 0px 85%;
   width: 20px;
-  cursor: pointer;
+  height: 20px;
 }
 
-.FiShare2:active {
-  font-size: 18px;
+.card__FiShare2:active {
+  color: var(--black);
 }

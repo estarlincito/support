@@ -24,7 +24,7 @@ const Share = () => {
         <div key={selected_card.id} className="Share__container">
           <div className="Share">
             <div className="Share__header">
-              <h2 className="Share__title">Compartir</h2>
+              <h1 className="Share__title">Compartir</h1>
 
               <i className="FiX" onClick={handleInactive}>
                 <FiX />

@@ -100,6 +100,14 @@
       "description": "Son muchos los usuarios a los que les gusta personalizar sus escritorios o apariencia del sistema.",
       "img": "undraw_personal_settings_re_i6w4__estarlincito",
       "url": "personalizar-pc"
+    },
+
+    {
+      "id": "14",
+      "subtitle": "Actualiza tu iPhone, iPad o Mac",
+      "description": "La actualización a la versión más reciente del software iOS o iPadOS proporciona las últimas funciones, actualizaciones de seguridad y correcciones de errores.",
+      "img": "undraw_os_upgrade_re_r0qa__estarlincito",
+      "url": "actualiza-iphone-ipad-mac"
     }
   ]
 }

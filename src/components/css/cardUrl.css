@@ -1,3 +1,7 @@
-.card_url .card__figure {
-    max-height: 180px;
+.card_url .card__article {
+    height: 555px;
+  }
+
+  .card_url .card__figure {
+    height: 240px;
   }

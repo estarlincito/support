@@ -8,7 +8,7 @@
   }
 
   .card__text {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .form {
@@ -46,10 +46,35 @@
   }
 
   .Share {
-    width: 85%;
+    width: 70%;
+  }
+
+  .Share__img {
+    display: none;
+  }
+
+  .Share__title {
+    font-size: 25px;
+  }
+
+  .Share__subtiitle {
+    margin-left: 20px;
+  }
+
+  .Share__contents {
+    padding: 5px;
+    grid-template-columns: auto;
+    margin: 20px;
+  }
+
+  .Share__text {
+    font-size: 20px;
+  }
+  .Share__link {
+    width: 50%;
   }
 
   .card_url .card__article {
-    margin-top: 20px;
+    margin-top: 5px;
   }
 }

@@ -7,7 +7,8 @@ import HelmetData from "./HelmetData";
 
 const Home = () => {
   const userContext = useContext(UserContext);
-  const { data_card, get_data_json, get_card, set_footer } = userContext;
+  const { selected_card, data_card, get_data_json, get_card, set_footer } =
+    userContext;
 
   useEffect(() => {
     get_data_json();
@@ -19,7 +20,7 @@ const Home = () => {
   const data_length = Object.keys(data_card).length;
 
   if (data_length !== 0) {
-    for (let i = 9; i < data_card.card.length; i++) {
+    for (let i = 10; i < data_card.card.length; i++) {
       items.push(
         <Card
           id={data_card.card[i].id}
@@ -34,12 +35,7 @@ const Home = () => {
 
   return (
     <>
-      <HelmetData
-        title="Home"
-        // url="https://estarlincito.tech"
-        // description="¡Soporte técnico, diseño web y mucho más!"
-        // img="favicon-96x96.ico"
-      />
+      <HelmetData title="Home" />
       <div className="card__container">
         {data_length !== 0 ? (
           <Card

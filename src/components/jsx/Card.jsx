@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { FiExternalLink, FiShare2 } from "react-icons/fi";
+import { FiShare2 } from "react-icons/fi";
 import { useContext } from "react";
 import UserContext from "../../context/UserContext";
 const card_img = require.context("../assets/img", true);
@@ -23,42 +23,27 @@ const Card = (props) => {
       className={selected_card ? "card__article user_select" : "card__article"}
       key={props.url}
     >
-      <div className="share_button">
-        <i className="FiShare2" onClick={handle_getCard_set_footer}>
-          <FiShare2 />
-        </i>
-      </div>
-
-      <figcaption className="card__figcaption">
-        <div className="card__figcaption_text">
-          <Link
-            to="/contact"
-            className="card__subtitle"
-            onClick={handle_getContact_set_footer}
-          >
-            <h3>{props.subtitle}</h3>
-          </Link>
+      <i className="card__FiShare2" onClick={handle_getCard_set_footer}>
+        <FiShare2 />
+      </i>
+      <Link to="/contact" onClick={handle_getContact_set_footer}>
+        <figcaption className="card__figcaption">
+          <h3 className="card__subtitle">{props.subtitle}</h3>
           <p className="card__text">{props.description}</p>
-          <div className="card__Button">
-            <Link to="/contact" onClick={handle_getContact_set_footer}>
-              Solicitar
-              <i className="FiExternalLink">
-                <FiExternalLink />
-              </i>
-            </Link>
-          </div>
-        </div>
-      </figcaption>
+        </figcaption>
 
-      <figure className="card__figure">
-        <Link to="/contact" onClick={handle_getContact_set_footer}>
-          <img
-            className="card__img"
-            src={card_img(`./${props.img}.svg`)}
-            alt=""
-          />
-        </Link>
-      </figure>
+        <i className="card__apply_for">Solicitar</i>
+
+        <figure className="card__figure">
+          <Link to="/contact" onClick={handle_getContact_set_footer}>
+            <img
+              className="card__img"
+              src={card_img(`./${props.img}.svg`)}
+              alt=""
+            />
+          </Link>
+        </figure>
+      </Link>
     </article>
   );
 };
