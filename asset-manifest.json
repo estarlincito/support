@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d32faa41.css",
-    "main.js": "/static/js/main.69f2ac9c.js",
+    "main.css": "/static/css/main.f4d6db68.css",
+    "main.js": "/static/js/main.af2ca2c8.js",
     "static/media/Rubik-Light.ttf": "/static/media/Rubik-Light.6dfd88fb878d43a4bbf1.ttf",
     "static/media/PTSans-NarrowBold.ttf": "/static/media/PTSans-NarrowBold.25266d9b8c6362bee05b.ttf",
     "static/media/PTSans-Narrow.ttf": "/static/media/PTSans-Narrow.020d261dfa00fe3148fb.ttf",
@@ -16,6 +16,7 @@
     "static/media/undraw_mobile_browsers_re_kxol__estarlincito.svg": "/static/media/undraw_mobile_browsers_re_kxol__estarlincito.ce1444bcf46bfd460658.svg",
     "static/media/undraw_people_re_8spw__estarlincito.svg": "/static/media/undraw_people_re_8spw__estarlincito.e9ce0a81cef56b8b002a.svg",
     "static/media/undraw_educator_re_s3jk__estarlincito.svg": "/static/media/undraw_educator_re_s3jk__estarlincito.b898a1f9abd5bce1cfd2.svg",
+    "static/media/undraw_os_upgrade_re_r0qa__estarlincito.svg": "/static/media/undraw_os_upgrade_re_r0qa__estarlincito.89a0ee61082c5ad90a7b.svg",
     "static/media/undraw_safe_re_kiil__estarlincito.svg": "/static/media/undraw_safe_re_kiil__estarlincito.57525dfd42b160ae7413.svg",
     "static/media/undraw_add_document_re_mbjx__estarlincito.svg": "/static/media/undraw_add_document_re_mbjx__estarlincito.fb4754ea73dcd9d285a4.svg",
     "static/media/undraw_netflix_q-00-o__estarlincito.svg": "/static/media/undraw_netflix_q-00-o__estarlincito.d7bc8c51b35d8e894036.svg",
@@ -24,11 +25,11 @@
     "static/media/undraw_secure_login_pdn4__estarlincito.svg": "/static/media/undraw_secure_login_pdn4__estarlincito.108c59fad44b6507d58b.svg",
     "static/media/undraw_broadcast_jhwx__estarlincito.svg": "/static/media/undraw_broadcast_jhwx__estarlincito.87a9a689a88abba49132.svg",
     "index.html": "/index.html",
-    "main.d32faa41.css.map": "/static/css/main.d32faa41.css.map",
-    "main.69f2ac9c.js.map": "/static/js/main.69f2ac9c.js.map"
+    "main.f4d6db68.css.map": "/static/css/main.f4d6db68.css.map",
+    "main.af2ca2c8.js.map": "/static/js/main.af2ca2c8.js.map"
   },
   "entrypoints": [
-    "static/css/main.d32faa41.css",
-    "static/js/main.69f2ac9c.js"
+    "static/css/main.f4d6db68.css",
+    "static/js/main.af2ca2c8.js"
   ]
 }
