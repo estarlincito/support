@@ -4,7 +4,8 @@
   --blackNav: #2c2c2c;
   --blackClair: #3f3f3f;
   --white: #ffffff;
-  --whiteCard: #fbfafad8;
+  --whiteCard: rgb(250, 247, 247);
+  --whiteCard2: rgb(248, 246, 246);
   --whitekNav: #d9d9dd;
   --forminputc: #bbb0bb;
   --navyBlueTransparent: #6b63ff5b;
@@ -32,7 +33,8 @@ a {
 
 .container {
   min-height: 80vh;
-  margin-top: 70px;
+  margin-top: 45px;
+  padding: 30px;
 }
 
 .user_select {

@@ -22,7 +22,6 @@ footer a {
 }
 
 footer a:active {
-  font-size: 18px;
   color: var(--white);
 }
 

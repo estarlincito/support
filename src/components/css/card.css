@@ -7,7 +7,7 @@
 }
 
 .card__container--2 .card__article {
-  background-color: var(--whiteCard);
+  background-color: var(--whiteCard2);
 }
 
 .card__container--2 .card__figcaption {
@@ -15,10 +15,10 @@
 }
 
 .card__article {
-  background-color: var(--white);
+  background-color: var(--whiteCard);
   height: 600px;
   margin: 2px;
-  border-radius: 5px;
+  border-radius: 5px 5px 0px 0px;
   display: grid;
   text-align: center;
 }
