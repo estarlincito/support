@@ -23,8 +23,7 @@
 
 @media screen and (max-width: 600px) {
   .container {
-    min-height: 80vh;
-    margin-top: 42px;
+    margin-top: 45px;
     padding: 5px;
   }
 
