@@ -8,12 +8,11 @@ import HelmetData from "./HelmetData";
 
 const CardUrl = () => {
   const { url_id } = useParams();
-  const { data_card, get_data_json, set_footer, curren_url, get_card } =
+  const { data_card, get_data_json, curren_url, get_card } =
     useContext(UserContext);
 
   useEffect(() => {
     get_data_json();
-    set_footer(true);
     curren_url(window.location.href);
     get_card(null);
   }, []);
@@ -36,12 +35,7 @@ const CardUrl = () => {
         <NotFound />
       ) : (
         <>
-          <HelmetData
-            title={data_url.card.subtitle}
-            // url={`https://estarlincito.tech/#/${data_url.card.url}`}
-            // description={data_url.card.description}
-            // img={data_url.card.img + ".svg"}
-          />
+          <HelmetData title={data_url.card.subtitle} />
           <Card
             id={data_url.card.id}
             subtitle={data_url.card.subtitle}

@@ -7,8 +7,7 @@ import HelmetData from "./HelmetData";
 
 const Home = () => {
   const userContext = useContext(UserContext);
-  const { selected_card, data_card, get_data_json, get_card, set_footer } =
-    userContext;
+  const { data_card, get_data_json, get_card, set_footer } = userContext;
 
   useEffect(() => {
     get_data_json();

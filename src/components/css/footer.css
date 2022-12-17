@@ -2,6 +2,7 @@ footer {
   background-color: var(--blackNav);
   color: var(--whitekNav);
   padding: 20px;
+  height: 50px;
   text-align: center;
 }
 

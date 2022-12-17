@@ -1,29 +1,33 @@
-nav{
-    background-color: var(--blackNav);
-    display: grid;
-    grid-template-columns: auto auto auto;
-    justify-content: center;
-    margin: auto;
-    padding: 10px;
-    text-align: center;
-    position: fixed;
-    top: 0;
-    z-index: 1;
-    width: 100%;
-    height: 50px;
+.menu {
+  background-color: var(--blackNav);
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 50px;
 }
 
-nav a{
-    color: var(--whitekNav);
-    padding: 10px;
-    font-size: 18px;
-    font-weight: bold;
+.menu a {
+  color: var(--whitekNav);
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
 }
 
-nav a:active{
-    color: var(--white);
+.menu a:active {
+  color: var(--white);
 }
 
-nav a:hover{
-    color: var(--white);
+.menu a:hover {
+  color: var(--white);
+}
+
+.antiMenu {
+  height: 70px;
 }

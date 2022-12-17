@@ -4,7 +4,6 @@ import { useContext } from "react";
 import UserContext from "../../context/UserContext";
 
 const Menu = () => {
-  
   const userContext = useContext(UserContext);
   const { get_card, set_footer, get_contact } = userContext;
 
@@ -15,17 +14,21 @@ const Menu = () => {
   };
 
   return (
-    <nav>
-      <Link to="/" replace onClick={handleInactive}>
-        Inicio
-      </Link>
-      <Link to="/service" replace onClick={handleInactive}>
-        Servicios
-      </Link>
-      <Link to="/contact" replace onClick={handleInactive}>
-        Contacto
-      </Link>
-    </nav>
+    <>
+      <nav className="menu">
+        <Link to="/" replace onClick={handleInactive}>
+          Inicio
+        </Link>
+        <Link to="/service" replace onClick={handleInactive}>
+          Servicios
+        </Link>
+        <Link to="/contact" replace onClick={handleInactive}>
+          Contacto
+        </Link>
+      </nav>
+
+      <div className="antiMenu"></div>
+    </>
   );
 };
 

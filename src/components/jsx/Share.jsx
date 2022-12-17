@@ -9,7 +9,7 @@ const Share = () => {
 
   const handleInactive = () => {
     get_card(null);
-    set_footer(curren_url_value === window.location.href ? true : false);
+    set_footer(false);
   };
 
   const copyToClipboard = () => {
