@@ -1,10 +1,10 @@
-import { Helmet } from "react-helmet";
+import { HelmetProvider } from "react-helmet-async";
 
 const HelmetData = (props) => {
   return (
-    <Helmet>
+    <HelmetProvider>
       <title>{props.title}</title>
-    </Helmet>
+    </HelmetProvider>
   );
 };
 

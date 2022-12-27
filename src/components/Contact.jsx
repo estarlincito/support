@@ -1,14 +1,13 @@
-import React, { useContext, useState } from "react";
-import UserContext from "../../context/UserContext";
-import HelmetData from "./HelmetData";
+import React, { useContext, useEffect, useState } from "react";
+import { Context } from "../context/UserContext";
 
 const Contact = () => {
-  const userContext = useContext(UserContext);
-  const { selected_contact } = userContext;
+  const { subtitle_value, HelmetData } = useContext(Context);
+  const [subject, setSubject] = useState("");
 
-  const [firstValue, setFirstValue] = useState(
-    selected_contact ? selected_contact.subtitle : ""
-  );
+  useEffect(() => {
+    subtitle_value === "" ? null : setSubject(subtitle_value);
+  }, []);
 
   return (
     <>
@@ -50,8 +49,8 @@ const Contact = () => {
 
           <label className="form__label">Asunto</label>
           <input
-            value={firstValue}
-            onChange={(e) => setFirstValue(e.target.value)}
+            value={subject}
+            onChange={(e) => setSubject(e.target.value)}
             type="text"
             className="form__input"
             name="requestSubject"
